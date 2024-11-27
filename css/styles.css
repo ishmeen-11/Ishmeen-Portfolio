@@ -3577,10 +3577,13 @@ img.u-pull-left {
 /* --------------------------------------------------------------------
  * ## about info
  * -------------------------------------------------------------------- */
-.about-info {
+about-info {
     --gutter: 0;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .about-info__pic {
@@ -3591,7 +3594,7 @@ img.u-pull-left {
 
 .about-info__text {
     padding: var(--vspace-3_5) 10vw var(--vspace-2) 0;
-    margin-left: -4rem;
+    margin-left: 4rem;
 }
 
 .about-info__text .text-pretitle {
