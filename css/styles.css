@@ -3949,7 +3949,7 @@ about-info {
  * ## modal popup
  * ------------------------------------------------------------------- */
 .modal-popup {
-    max-width: 900px;
+    max-width: 800px;
     background-color: white;
     font-size: calc(var(--text-size) * 0.9447);
     line-height: var(--vspace-0_875);
