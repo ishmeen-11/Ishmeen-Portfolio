@@ -4430,3 +4430,305 @@ about-info {
         right: 6vw;
     }
 }
+
+
+/* ===================================================================
+ * # CUSTOM ADDITIONS — Portfolio Upgrade
+ *
+ *
+ * ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- 
+ * ## Inter font override for body text
+ * ------------------------------------------------------------------- */
+body,
+p,
+.attention-getter,
+.timeline__desc,
+.contact-links,
+.contact-social {
+    font-family: 'Inter', var(--font-1), sans-serif;
+}
+
+
+/* ===================================================================
+ * # SKILLS SECTION
+ * ------------------------------------------------------------------- */
+
+.s-skills {
+    padding-top: var(--vspace-5);
+    padding-bottom: var(--vspace-3_5);
+    border-top: 1px solid var(--color-border);
+}
+
+.s-skills .h1 {
+    margin-top: 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--vspace-1_5);
+    margin-top: var(--vspace-2);
+}
+
+.skills-category {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: var(--vspace-1_25) var(--vspace-1);
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.skills-category:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(234, 190, 124, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(234, 190, 124, 0.08);
+}
+
+.skills-category__title {
+    font-family: var(--font-1);
+    font-weight: 500;
+    font-size: var(--text-md);
+    color: var(--color-1);
+    margin-top: 0;
+    margin-bottom: var(--vspace-0_75);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.skills-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-pill {
+    display: inline-block;
+    padding: 6px 16px;
+    font-family: 'Inter', var(--font-1), sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-pill:hover {
+    background: rgba(234, 190, 124, 0.15);
+    border-color: var(--color-1);
+    color: var(--color-1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(234, 190, 124, 0.15);
+}
+
+/* staggered fade-in for skill pills */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills-pills .skill-pill {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+.skills-pills .skill-pill:nth-child(1) { animation-delay: 0.05s; }
+.skills-pills .skill-pill:nth-child(2) { animation-delay: 0.1s; }
+.skills-pills .skill-pill:nth-child(3) { animation-delay: 0.15s; }
+.skills-pills .skill-pill:nth-child(4) { animation-delay: 0.2s; }
+.skills-pills .skill-pill:nth-child(5) { animation-delay: 0.25s; }
+.skills-pills .skill-pill:nth-child(6) { animation-delay: 0.3s; }
+.skills-pills .skill-pill:nth-child(7) { animation-delay: 0.35s; }
+.skills-pills .skill-pill:nth-child(8) { animation-delay: 0.4s; }
+.skills-pills .skill-pill:nth-child(9) { animation-delay: 0.45s; }
+
+/* responsive skills */
+@media screen and (max-width: 800px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: var(--vspace-1);
+    }
+
+    .s-skills {
+        padding-top: var(--vspace-4);
+    }
+}
+
+
+/* ===================================================================
+ * # PUBLICATION CARDS — Dark Glassmorphism
+ * ------------------------------------------------------------------- */
+
+.publication-list {
+    margin-top: var(--vspace-2);
+}
+
+.pub-card {
+    background: rgba(255, 255, 255, 0.04) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    padding: var(--vspace-1_25) var(--vspace-1_25) var(--vspace-1) !important;
+    margin-bottom: var(--vspace-0_75) !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.pub-card:hover {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-color: rgba(234, 190, 124, 0.3) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 40px rgba(234, 190, 124, 0.1) !important;
+}
+
+.pub-card__venue {
+    display: inline-block;
+    padding: 3px 12px;
+    font-family: 'Inter', var(--font-1), sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-1);
+    background: rgba(234, 190, 124, 0.12);
+    border: 1px solid rgba(234, 190, 124, 0.25);
+    border-radius: 100px;
+    margin-bottom: var(--vspace-0_5);
+}
+
+.pub-card__title {
+    font-family: var(--font-1) !important;
+    font-weight: 500 !important;
+    font-size: var(--text-md) !important;
+    color: white !important;
+    line-height: 1.4 !important;
+    margin-top: 0 !important;
+    margin-bottom: var(--vspace-0_25) !important;
+}
+
+.pub-card__type {
+    font-family: 'Inter', var(--font-1), sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--color-text-light);
+    margin-bottom: var(--vspace-0_25);
+}
+
+.pub-card__desc {
+    font-family: 'Inter', var(--font-1), sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: var(--vspace-0_5);
+}
+
+.pub-card__link {
+    font-family: 'Inter', var(--font-1), sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-1) !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.pub-card__link:hover {
+    color: var(--color-1-lighter) !important;
+    transform: translateX(4px);
+}
+
+
+/* ===================================================================
+ * # TECH-STACK TAG PILLS — Project Cards
+ * ------------------------------------------------------------------- */
+
+.folio-list__item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.tag-pill {
+    display: inline-block;
+    padding: 3px 10px;
+    font-family: 'Inter', var(--font-1), sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-1);
+    background: rgba(234, 190, 124, 0.1);
+    border: 1px solid rgba(234, 190, 124, 0.2);
+    border-radius: 100px;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.folio-list__item-link:hover .tag-pill {
+    background: rgba(234, 190, 124, 0.2);
+    border-color: rgba(234, 190, 124, 0.4);
+}
+
+
+/* ===================================================================
+ * # PROJECT CARD HOVER MICRO-ANIMATIONS
+ * ------------------------------------------------------------------- */
+
+.folio-list__item {
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.folio-list__item:hover {
+    transform: translateY(-4px);
+}
+
+.folio-list__item-pic img {
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.folio-list__item:hover .folio-list__item-pic img {
+    transform: scale(1.05);
+}
+
+/* hide tag pills on very small screens */
+@media screen and (max-width: 400px) {
+    .folio-list__item-tags {
+        display: none;
+    }
+}
+
+
+/* ===================================================================
+ * # MODAL POPUP LINK STYLING
+ * ------------------------------------------------------------------- */
+
+.modal-popup__link {
+    display: inline-block;
+    font-family: 'Inter', var(--font-1), sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-1) !important;
+    text-decoration: none;
+    margin-bottom: var(--vspace-0_5);
+    transition: all 0.3s ease;
+}
+
+.modal-popup__link:hover {
+    transform: translateX(4px);
+    opacity: 0.85;
+}

@@ -6,14 +6,33 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Ishmeen's Portfolio</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Ishmeen Garewal — Data Scientist & ML Researcher</title>
+    <meta name="description"
+        content="Portfolio of Ishmeen Garewal — MS in Data Science at Columbia University | ML & NLP Enthusiast | Tech for Social Good. 5 IEEE/Springer publications.">
+    <meta name="author" content="Ishmeen Garewal">
     <meta name="google-site-verification" content="N4e3SIglciPJJj9xt3dGZ2HbnzJpAaA4p4KjhfLyBA8" />
+
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ishmeen Garewal — Data Scientist & ML Researcher">
+    <meta property="og:description"
+        content="MS in Data Science @ Columbia · 5 IEEE/Springer publications · IIT Roorkee · Deloitte · Machine Learning · NLP · Tech for Social Good">
+    <meta property="og:url" content="https://ishmeen-11.github.io/Ishmeen-Portfolio/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ishmeen Garewal — Data Scientist & ML Researcher">
+    <meta name="twitter:description"
+        content="MS in Data Science @ Columbia · 5 IEEE/Springer publications · Machine Learning · NLP · Healthcare AI">
 
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS
     ================================================== -->
@@ -69,10 +88,9 @@
                         <li><a href="index.html" class="home-link">Ishmeen</a></li>
                         <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
                         <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#skills" class="smoothscroll">Skills</a></li>
                         <li><a href="#works" class="smoothscroll">Works</a></li>
                         <li><a href="#contact" class="smoothscroll">Get in Touch</a></li>
-                        
-              
                     </ul>
                 </nav>
             </div>
@@ -96,17 +114,22 @@
                             Hello World
                         </div>
 
-                        <h2 class="text-huge-title">
-                            I'm Ishmeen, <br>a tech enthusiast decoding the future, one line of code at a time.<br>
-                        </h2>
+                        <h1 class="text-huge-title">
+                            I'm Ishmeen,<br>
+                            a Data Scientist building intelligent systems at the intersection of ML, NLP &amp;
+                            healthcare.
+                        </h1>
                     </div>
 
                     <ul class="intro-social">
-                        <li><a href="https://www.linkedin.com/in/ishmeen-garewal/">LinkedIn</a></li>
-                        <li><a href="https://github.com/ishmeen-11">Github</a></li>
-                        <li><a href="https://scholar.google.ca/citations?user=CW0MP1gAAAAJ&hl=en">Google
-                                Scholar</a>
-                        <li><a href="https://medium.com/@ishmeengarewal">Medium</a>
+                        <li><a href="https://www.linkedin.com/in/ishmeen-garewal/" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/ishmeen-11" target="_blank" rel="noopener noreferrer">Github</a>
+                        </li>
+                        <li><a href="https://scholar.google.ca/citations?user=CW0MP1gAAAAJ&hl=en" target="_blank"
+                                rel="noopener noreferrer">Google Scholar</a></li>
+                        <li><a href="https://medium.com/@ishmeengarewal" target="_blank"
+                                rel="noopener noreferrer">Medium</a></li>
                     </ul>
 
                 </div> <!-- end intro content -->
@@ -131,8 +154,8 @@
 
                     <div class="column lg-6 md-12 about-info__pic-block">
                         <img src="images/about-photo.jpg"
-                            srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x" alt="sorry"
-                            class="about-info__pic" data-animate-el>
+                            srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x"
+                            alt="Ishmeen Garewal portrait" class="about-info__pic" data-animate-el>
                     </div>
 
                     <div class="column lg-6 md-12">
@@ -143,8 +166,13 @@
                             </h2>
                             <p class="attention-getter" data-animate-el
                                 style="word-spacing: normal; letter-spacing: normal;">
-
-                               I am a Master in Data Science student at Columbia University, driven by a passion for using technology to solve real-world problems. With a strong foundation in Computer Engineering and hands-on experience in data analysis, machine learning and deep learning, I’ve contributed to impactful projects across domains like healthcare, finance, and social good. My growing interest in research and emerging technologies—particularly in NLP and ethical AI—has led me to explore applications with real societal value. 
+                                I'm a Master's in Data Science student at <strong>Columbia University</strong> with a
+                                background in Computer Engineering (CGPA 9.64/10) and <strong>5 peer-reviewed
+                                    publications</strong> in IEEE and Springer. My work spans machine learning, NLP, and
+                                deep learning — applied to real-world challenges in healthcare, traffic safety, and
+                                social impact. I've interned at <strong>Deloitte</strong> and <strong>IIT
+                                    Roorkee</strong>, and currently serve as a Graduate Student Assistant at the
+                                <strong>Northeast Big Data Innovation Hub</strong> at Columbia.
                             </p>
                             <a href="assets/Ishmeen_Garewal_CV.pdf" class="btn btn--medium u-fullwidth"
                                 data-animate-el>Download Resume</a>
@@ -167,32 +195,64 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h4 class="timeline__title">Deloitte Touche Tohmatsu India LLP</h3>
-                                        <h5 class="timeline__meta">Intern</h5>
-                                        <p class="timeline__timeframe">June 2024 - July 2024</p>
+                                    <h4 class="timeline__title">Northeast Big Data Innovation Hub</h4>
+                                    <h5 class="timeline__meta">Graduate Student Assistant · Columbia University</h5>
+                                    <p class="timeline__timeframe">Jan 2026 – Present</p>
+                                </div>
+                                <div class="timeline__desc" align="justify">
+                                    <p>Supporting student-focused programs and regional data science initiatives for one
+                                        of four NSF-funded Big Data Innovation Hubs.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Indian Institute of Technology (IIT), Roorkee</h4>
+                                    <h5 class="timeline__meta">Research Intern</h5>
+                                    <p class="timeline__timeframe">May 2025 – Aug 2025</p>
                                 </div>
                                 <div class="timeline__desc" align="justify">
                                     <ul>
-                                        <li>
-                                            <strong>Front-end Development:</strong> Developed the front-end of a web
-                                            application for a climate risk tool using Django, focusing on creating an
-                                            intuitive and responsive
-                                            user interface.
-                                        </li>
-                                        <li>
-                                            <strong>Automation with Python:</strong> Implemented automation for foreign
-                                            exchange deal valuations by developing backend logic in Python, streamlining
-                                            financial processes.
-                                        </li>
-                                        <li>
-                                            <strong>Data Visualization:</strong> Contributed to the development of a
-                                            data visualization tool for a high-profile client, enabling clearer insights
-                                            and data-driven decision-making.
-                                        </li>
+                                        <li>Processed 5,000+ vehicular trajectories for traffic data analytics and
+                                            AI-driven compliance systems.</li>
+                                        <li>Formalized 120+ Indian traffic rules into machine-readable formats using
+                                            LLMs, increasing rule-detection accuracy by 22%.</li>
                                     </ul>
                                 </div>
                             </div>
 
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Deloitte Touche Tohmatsu India LLP</h4>
+                                    <h5 class="timeline__meta">Internship Trainee</h5>
+                                    <p class="timeline__timeframe">Jun 2024 – Jul 2024</p>
+                                </div>
+                                <div class="timeline__desc" align="justify">
+                                    <ul>
+                                        <li>Designed an automated FX deal valuation framework using Python & QuantLib,
+                                            reducing manual workflows by 75%.</li>
+                                        <li>Built a Django-powered interactive visualization platform used by 40+
+                                            consultants.</li>
+                                        <li>Conducted comparative analysis of RBI and NBFC risk policies, identifying
+                                            critical regulatory gaps.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">FCRIT, University of Mumbai</h4>
+                                    <h5 class="timeline__meta">Research Intern</h5>
+                                    <p class="timeline__timeframe">Jul 2024 – Jan 2025</p>
+                                </div>
+                                <div class="timeline__desc" align="justify">
+                                    <p>Published research at the intersection of NLP, Quantum Computing, and Blockchain
+                                        in IEEE Xplore and Springer.</p>
+                                </div>
+                            </div>
 
                         </div> <!-- end timeline -->
 
@@ -211,60 +271,30 @@
                                 <div class="timeline__header">
                                     <h4 class="timeline__title">Columbia University</h4>
                                     <h5 class="timeline__meta">Master of Science in Data Science</h5>
-                                    <p class="timeline__timeframe">Aug 2025 - Dec 2026</p>
+                                    <p class="timeline__timeframe">Aug 2025 – Dec 2026</p>
                                 </div>
                                 <div class="timeline__desc" align="justify">
-                                    <p>I’m a Master’s in Data Science student at Columbia University, driven by a passion for using technology for social good and solving real-world problems at the intersection of data science, NLP, and healthcare. During my first semester, I built strong foundations through coursework in Probability and Statistics, Exploratory Data Analysis and Visualization, Applied Deep Learning, and Analytics in Action—a project-based collaboration with Columbia Business School where I worked with MBA and MS students to address real industry challenges.
-
-In Spring 2026, I am expanding this foundation through advanced courses in Machine Learning, Statistical Inference and Modeling, Causal Inference, and AI and Digital Transformations, with a growing focus on building robust, interpretable, and impact-driven data solutions. My journey is guided by curiosity, purpose, and a desire to create meaningful change through data.
-                                    </p>
+                                    <p><strong>Relevant Coursework:</strong> Probability & Statistics, Exploratory Data
+                                        Analysis & Visualization (R), Applied Deep Learning, Machine Learning for Data
+                                        Science, Statistical Inference & Modeling, Causal Inference, Forecasting,
+                                        Analytics in Action.</p>
+                                    <p>Collaborating with Columbia Business School MBA students through Analytics in
+                                        Action to solve real industry challenges.</p>
                                 </div>
                             </div>
-                            
+
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
                                     <h4 class="timeline__title">University of Mumbai</h4>
                                     <h5 class="timeline__meta">Bachelor of Engineering in Computer Engineering</h5>
-                                    <p class="timeline__timeframe">Jun 2021 - May 2025</p>
+                                    <p class="timeline__timeframe">Jun 2021 – May 2025</p>
                                 </div>
                                 <div class="timeline__desc" align="justify">
-                                    <p>I have completed my undergraduate degree in Computer Engineering, where I consistently ranked among the top 10% of my class — securing 3rd position in my 4th semester and 2nd in my third year. My academic foundation includes in-depth coursework in Data Structures, Operating Systems, Machine Learning, and Big Data Analytics, reinforced through theory lectures, lab sessions, and hands-on assignments. I’ve also explored advanced topics such as Artificial Intelligence, Blockchain, Cryptography, and Compiler Construction. 
-</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Delhi Public School, Nerul</h4>
-                                    <h5 class="timeline__meta">Higher Secondary School</h5>
-                                    <p class="timeline__timeframe">Jun 2019 - Jul 2021</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>During my higher secondary education, I focused on science subjects with a
-                                        particular emphasis on Computer Science. Here, I deepened my understanding of
-                                        Python and developed a strong foundation in programming, which eventually led to
-                                        my interest in fields like Data Science and AI. I also participated in coding
-                                        competitions and school-level hackathons, where I began applying my technical
-                                        knowledge to solve real-world problems.</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Avalon Heights International School</h4>
-                                    <h5 class="timeline__meta">Primary and Secondary School</h5>
-                                    <p class="timeline__timeframe">Jun 2005 - May 2019</p>
-                                </div>
-                                <div class="timeline__desc" align="justify">
-                                    <p>My academic journey began at Avalon Heights International School, where I
-                                        developed an early interest in technology. In grades 9 and 10, I was introduced
-                                        to Java, sparking my fascination with programming and algorithms. Beyond
-                                        academics, I was actively involved in co-curricular activities and leadership
-                                        roles, helping me develop a well-rounded skill set that I continue to build on
-                                        today.</p>
+                                    <p><strong>CGPA: 9.64/10.0</strong> — Graduated in the top 10% of the class; ranked
+                                        2nd in third year. Core coursework in Data Structures, Operating Systems,
+                                        Machine Learning, Big Data Analytics, AI, Blockchain, and Cryptography.
+                                        Published 5 research papers during undergraduate studies.</p>
                                 </div>
                             </div>
 
@@ -276,8 +306,86 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                 </div> <!-- end about-timelines -->
 
             </section> <!-- end s-about -->
-            <!-- Projects Section -->
 
+
+            <!-- ### skills
+            ================================================== -->
+            <section id="skills" class="s-skills target-section">
+
+                <div class="row skills-content wide" data-animate-block>
+                    <div class="column lg-12">
+
+                        <h2 class="text-pretitle2" data-animate-el>
+                            Skills & Technologies
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            The tools and technologies I work with every day.
+                        </p>
+
+                        <div class="skills-grid" data-animate-el>
+
+                            <div class="skills-category">
+                                <h4 class="skills-category__title">Languages</h4>
+                                <div class="skills-pills">
+                                    <span class="skill-pill">Python</span>
+                                    <span class="skill-pill">R</span>
+                                    <span class="skill-pill">SQL</span>
+                                    <span class="skill-pill">Java</span>
+                                    <span class="skill-pill">C#</span>
+                                    <span class="skill-pill">JavaScript</span>
+                                    <span class="skill-pill">Solidity</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-category">
+                                <h4 class="skills-category__title">Machine Learning & AI</h4>
+                                <div class="skills-pills">
+                                    <span class="skill-pill">PyTorch</span>
+                                    <span class="skill-pill">TensorFlow</span>
+                                    <span class="skill-pill">Scikit-learn</span>
+                                    <span class="skill-pill">Keras</span>
+                                    <span class="skill-pill">NLP (NLTK, spaCy)</span>
+                                    <span class="skill-pill">CNNs</span>
+                                    <span class="skill-pill">LLMs / Gen AI</span>
+                                    <span class="skill-pill">LDA / NMF</span>
+                                    <span class="skill-pill">Collaborative Filtering</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-category">
+                                <h4 class="skills-category__title">Data & Visualization</h4>
+                                <div class="skills-pills">
+                                    <span class="skill-pill">Pandas</span>
+                                    <span class="skill-pill">NumPy</span>
+                                    <span class="skill-pill">Matplotlib</span>
+                                    <span class="skill-pill">Plotly</span>
+                                    <span class="skill-pill">D3.js</span>
+                                    <span class="skill-pill">ggplot2</span>
+                                    <span class="skill-pill">Tableau</span>
+                                    <span class="skill-pill">Streamlit</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-category">
+                                <h4 class="skills-category__title">Tools & Platforms</h4>
+                                <div class="skills-pills">
+                                    <span class="skill-pill">AWS (EC2, S3)</span>
+                                    <span class="skill-pill">Django</span>
+                                    <span class="skill-pill">Flask</span>
+                                    <span class="skill-pill">Git / GitHub</span>
+                                    <span class="skill-pill">Docker</span>
+                                    <span class="skill-pill">Unity (AR)</span>
+                                    <span class="skill-pill">Jupyter</span>
+                                    <span class="skill-pill">Linux</span>
+                                </div>
+                            </div>
+
+                        </div> <!-- end skills-grid -->
+
+                    </div>
+                </div>
+
+            </section> <!-- end s-skills -->
 
 
             <!-- ### works
@@ -289,11 +397,11 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
 
                     <div class="column lg-12" data-animate-block>
 
-                        <h1 class="text-pretitle2" data-animate-el>
+                        <h2 class="text-pretitle2" data-animate-el>
                             Projects
-                        </h1>
+                        </h2>
                         <p class="h1" data-animate-el>
-                            Here are some of my favorite projects that I have worked on recently.
+                            A selection of projects I've built — from data analysis to cloud-deployed apps.
                         </p>
 
                         <ul class="folio-list row block-lg-one-half block-stack-on-1000">
@@ -303,15 +411,20 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/graph_img.png"
                                             srcset="images/portfolio/graph_img.png 1x, images/portfolio/graph_img@2x.png 2x"
-                                            alt="">
+                                            alt="Heat's Toll on Health project thumbnail">
                                     </div>
 
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
-                                            Exploratory Data Analysis and Visualziation
+                                            Exploratory Data Analysis and Visualization
                                         </div>
                                         <div class="folio-list__item-title">
                                             Heat's Toll on Health
+                                        </div>
+                                        <div class="folio-list__item-tags">
+                                            <span class="tag-pill">R</span>
+                                            <span class="tag-pill">D3.js</span>
+                                            <span class="tag-pill">ggplot2</span>
                                         </div>
                                     </div>
                                 </a>
@@ -324,13 +437,13 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                     </svg>
                                 </a>
                             </li> <!--end folio-list__item -->
-                            
+
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-02">
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/foodmo_logo.png"
                                             srcset="images/portfolio/foodmo_logo.png 1x, images/portfolio/foodmo_logo@2x.png 2x"
-                                            alt="">
+                                            alt="FoodMO app thumbnail">
                                     </div>
 
                                     <div class="folio-list__item-text">
@@ -339,6 +452,11 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                         </div>
                                         <div class="folio-list__item-title">
                                             FoodMO: A Food Nutrient Analysis Application
+                                        </div>
+                                        <div class="folio-list__item-tags">
+                                            <span class="tag-pill">Python</span>
+                                            <span class="tag-pill">OCR</span>
+                                            <span class="tag-pill">Random Forest</span>
                                         </div>
                                     </div>
                                 </a>
@@ -356,15 +474,21 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                 <a class="folio-list__item-link" href="#modal-03">
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/phy.png"
-                                            srcset="images/portfolio/phy.png 1x, images/portfolio/phy@2x.png 2x" alt="">
+                                            srcset="images/portfolio/phy.png 1x, images/portfolio/phy@2x.png 2x"
+                                            alt="Physics IRL AR app thumbnail">
                                     </div>
 
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
-                                            Application
+                                            Augmented Reality
                                         </div>
                                         <div class="folio-list__item-title">
                                             Physics IRL
+                                        </div>
+                                        <div class="folio-list__item-tags">
+                                            <span class="tag-pill">Unity</span>
+                                            <span class="tag-pill">C#</span>
+                                            <span class="tag-pill">AR</span>
                                         </div>
                                     </div>
                                 </a>
@@ -385,7 +509,7 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/movie.png"
                                             srcset="images/portfolio/movie.png 1x, images/portfolio/movie@2x.png 2x"
-                                            alt="">
+                                            alt="MyReckList recommendation system thumbnail">
                                     </div>
 
                                     <div class="folio-list__item-text">
@@ -394,6 +518,11 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                         </div>
                                         <div class="folio-list__item-title">
                                             MyReckList: Movie Recommendation System
+                                        </div>
+                                        <div class="folio-list__item-tags">
+                                            <span class="tag-pill">Python</span>
+                                            <span class="tag-pill">ALS</span>
+                                            <span class="tag-pill">Collaborative Filtering</span>
                                         </div>
                                     </div>
                                 </a>
@@ -411,8 +540,8 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                 <a class="folio-list__item-link" href="#modal-05">
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/umanita.png"
-                                            srcset="images/portfolio/umanita.png 1x, images/portfolio/umanita@2x.png"
-                                            alt="">
+                                            srcset="images/portfolio/umanita.png 1x, images/portfolio/umanita@2x.png 2x"
+                                            alt="Umanità NGO platform thumbnail">
                                     </div>
 
                                     <div class="folio-list__item-text">
@@ -421,6 +550,11 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                         </div>
                                         <div class="folio-list__item-title">
                                             Umanità
+                                        </div>
+                                        <div class="folio-list__item-tags">
+                                            <span class="tag-pill">HTML</span>
+                                            <span class="tag-pill">CSS</span>
+                                            <span class="tag-pill">JavaScript</span>
                                         </div>
                                     </div>
                                 </a>
@@ -437,16 +571,21 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                 <a class="folio-list__item-link" href="#modal-06">
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/ecglogo.png"
-                                            srcset="images/portfolio/ecglogo@2x.png 1x, images/portfolio/careercruise@2x.png"
-                                            alt="">
+                                            srcset="images/portfolio/ecglogo@2x.png 1x, images/portfolio/careercruise@2x.png 2x"
+                                            alt="ECG Report Analysis thumbnail">
                                     </div>
 
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
-                                            Web Application
+                                            Healthcare AI
                                         </div>
                                         <div class="folio-list__item-title">
                                             ECG Report Analysis Leveraging Generative AI
+                                        </div>
+                                        <div class="folio-list__item-tags">
+                                            <span class="tag-pill">CNN</span>
+                                            <span class="tag-pill">Gen AI</span>
+                                            <span class="tag-pill">Python</span>
                                         </div>
                                     </div>
                                 </a>
@@ -464,15 +603,20 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/cloud.png"
                                             srcset="images/portfolio/cloud.png 1x, images/portfolio/cloud@2x.png 2x"
-                                            alt="">
+                                            alt="Cloud-based ToDo List thumbnail">
                                     </div>
 
                                     <div class="folio-list__item-text">
                                         <div class="folio-list__item-cat">
-                                            Cloud Computing based application
+                                            Cloud Computing
                                         </div>
                                         <div class="folio-list__item-title">
                                             ToDo List
+                                        </div>
+                                        <div class="folio-list__item-tags">
+                                            <span class="tag-pill">Django</span>
+                                            <span class="tag-pill">AWS EC2</span>
+                                            <span class="tag-pill">Python</span>
                                         </div>
                                     </div>
                                 </a>
@@ -486,7 +630,6 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                                 </a>
                             </li> <!--end folio-list__item -->
 
-                            
 
 
                         </ul> <!-- end folio-list -->
@@ -499,45 +642,47 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
 
                     <div id="modal-01" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/gallery/heat_ss.png" alt="">
+                            <img src="images/portfolio/gallery/heat_ss.png"
+                                alt="Heat's Toll on Health project screenshot">
 
                             <div class="modal-popup__desc">
                                 <h5>Heat's Toll on Health</h5>
-                                <p>As part of the Exploratory Data Analysis and Visualization course, I collaborated with a classmate to investigate the growing impact of extreme heat on public health across the United States. This project explores how the frequency and intensity of extreme heat events have changed over time and examines their relationship with health outcomes such as hospitalizations, emergency visits, and mortality. By applying data wrangling, visual analytics, and statistical summaries, we identified trends across regions and age groups, highlighted patterns in heat-related health risks, and gained insights into which populations are most vulnerable. The analysis offers a data-driven perspective on the human cost of climate extremes and demonstrates the power of exploratory analysis to inform public health conversations and potential interventions.
-                                </p>
-                                <a href="https://ishmeen-11.github.io/EDAV-Project/"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="modal-popup__link">
-   View Project →
-</a>
+                                <p>Collaborated on an EDAV course project investigating extreme heat's impact on U.S.
+                                    public health. Applied data wrangling, visual analytics (R, D3.js, ggplot2), and
+                                    statistical methods to identify trends in heat-related hospitalizations, emergency
+                                    visits, and mortality across regions and demographics. The analysis reveals which
+                                    populations are most vulnerable and provides data-driven insights to inform public
+                                    health interventions.</p>
+                                <a href="https://ishmeen-11.github.io/EDAV-Project/" target="_blank"
+                                    rel="noopener noreferrer" class="modal-popup__link">
+                                    View Project →
+                                </a>
                                 <ul class="modal-popup__cat">
                                     <li>Data Visualization</li>
-                                    <li>Analysis</li>
-                                    <li>R programming
-                                    </li>
+                                    <li>R Programming</li>
+                                    <li>D3.js</li>
+                                </ul>
                             </div>
 
                         </div>
                     </div> <!-- end modal -->
-                    
+
                     <div id="modal-02" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/gallery/foodmo_imp.png" alt="">
+                            <img src="images/portfolio/gallery/foodmo_imp.png" alt="FoodMO application screenshot">
 
                             <div class="modal-popup__desc">
                                 <h5>FoodMO: A Food Nutrient Analysis Application</h5>
-                                <p>FoodMO is a cutting-edge application designed to simplify food label interpretation
-                                    using OCR and Random Forest. It helps users make healthier dietary choices by
-                                    extracting text from food labels and analyzing the nutritional content of packaged
-                                    foods. The system also provides personalized recommendations for healthier
-                                    alternatives, making it a valuable tool for promoting well-informed eating habits.
-                                </p>
+                                <p>Built a mobile application that uses Optical Character Recognition (OCR) to extract
+                                    text from food labels and a Random Forest classifier to analyze nutritional content.
+                                    The system provides personalized healthier-alternative recommendations using cosine
+                                    similarity, helping users make informed dietary choices. Published as a research
+                                    paper in Springer LNNS.</p>
                                 <ul class="modal-popup__cat">
                                     <li>OCR</li>
                                     <li>Random Forest</li>
-                                    <li>Cosine Similarity
-                                    </li>
+                                    <li>Cosine Similarity</li>
+                                </ul>
                             </div>
 
                         </div>
@@ -545,22 +690,15 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
 
                     <div id="modal-03" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/gallery/phy.png" alt="">
+                            <img src="images/portfolio/gallery/phy.png" alt="Physics IRL AR application screenshot">
 
                             <div class="modal-popup__desc">
                                 <h5>Physics IRL</h5>
-                                <p>Physics IRL is an augmented reality (AR) application that simplifies physics concepts
-                                    like frictional and gravitational forces. Using camera permissions, the app detects
-                                    horizontal planes via the AR Plane Manager. Plane is shown as a dotted mesh on which
-                                    users
-                                    can place 3D objects on the plane to study gravitaionl
-                                    force. To explore frictional force, Unity's AR Tracked Image Manager tracks
-                                    predefined
-                                    images in a Tracked Images Library, enabling precise placement of 3D models.
-                                    The implementation has been done using custom C# scripts. With realistic textures
-                                    and interactive simulations, Physics IRL provides an
-                                    immersive experience, and making physics easy to imagine and understand.
-                                </p>
+                                <p>An augmented reality (AR) application that makes physics tangible. Using Unity's AR
+                                    Plane Manager, it detects horizontal surfaces where users can place 3D objects to
+                                    study gravitational force. AR Tracked Image Manager tracks predefined images for
+                                    frictional force simulations. Built with custom C# scripts and realistic textures,
+                                    it provides an immersive, interactive learning experience.</p>
                                 <ul class="modal-popup__cat">
                                     <li>Unity</li>
                                     <li>C#</li>
@@ -572,22 +710,18 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
 
                     <div id="modal-07" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/gallery/todolist.png" alt="">
+                            <img src="images/portfolio/gallery/todolist.png"
+                                alt="Cloud ToDo List application screenshot">
 
                             <div class="modal-popup__desc">
-                                <h5>ToDo List: Cloud-Based Multi-Device To-Do List Application</h5>
-                                <p>This project utilizes AWS EC2, Security Groups, and Django to create a scalable,
-                                    cloud-based to-do list application with automatic scaling, reducing operational
-                                    overhead. Built with Python, it enables seamless task management through
-                                    collaborative features, allowing multiple users to create, update, and manage lists
-                                    in real-time and access on multiple devices simultaneously. The application supports
-                                    full CRUD operations, ensuring efficient
-                                    functionality with minimal latency and high availability. Its responsive design
-                                    provides accessibility across devices, fostering productivity and idea-sharing in a
-                                    shared digital workspace. </p>
+                                <h5>ToDo List: Cloud-Based Multi-Device To-Do List</h5>
+                                <p>A scalable, cloud-based task management application deployed on AWS EC2 with
+                                    auto-scaling and Django. Supports multi-user real-time collaboration with full CRUD
+                                    operations, minimal latency, and high availability. Responsive design ensures
+                                    accessibility across all devices.</p>
                                 <ul class="modal-popup__cat">
                                     <li>Django</li>
-                                    <li>AWS EC2 </li>
+                                    <li>AWS EC2</li>
                                     <li>Security Groups</li>
                                 </ul>
                             </div>
@@ -597,22 +731,18 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
 
                     <div id="modal-04" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/gallery/rec.png" alt="">
+                            <img src="images/portfolio/gallery/rec.png"
+                                alt="MyReckList recommendation system screenshot">
 
                             <div class="modal-popup__desc">
                                 <h5>MyReckList</h5>
-                                <p>This website is designed to recommend movies and books tailored to user preferences
-                                    based on their ratings. By leveraging the Alternating Least Squares (ALS) algorithm,
-                                    it implements collaborative filtering to analyze user behavior and predict
-                                    personalized recommendations. The system processes user data to identify patterns
-                                    and suggest the top 10 most relevant movies and books, ensuring a highly accurate
-                                    and user-centric experience. Whether a user is exploring new genres or looking for
-                                    similar content, the platform delivers recommendations that align with their tastes,
-                                    enhancing discovery and engagement. This approach optimizes content curation,
-                                    offering users a seamless, enjoyable experience.</p>
+                                <p>A recommendation engine that suggests movies and books tailored to user preferences
+                                    using the Alternating Least Squares (ALS) algorithm. Implements collaborative
+                                    filtering to analyze rating patterns and deliver the top 10 most relevant
+                                    recommendations, ensuring a highly personalized discovery experience.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Website</li>
                                     <li>Collaborative Filtering</li>
+                                    <li>ALS Algorithm</li>
                                 </ul>
                             </div>
 
@@ -622,22 +752,17 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                     <div id="modal-05" hidden>
                         <div class="modal-popup">
 
-                            <img src="images/portfolio/gallery/umanita_page.png" alt="">
+                            <img src="images/portfolio/gallery/umanita_page.png" alt="Umanità platform screenshot">
 
                             <div class="modal-popup__desc">
                                 <h5>Umanità</h5>
-                                <p>Umanità is a website designed to help NGOs create and manage their own websites,
-                                    providing them with a virtual presence in the world. Built using HTML, CSS, and
-                                    JS, Umanità allows organizations to design customizable websites that
-                                    reflect their unique missions and goals. The platform provides tools for easy
-                                    content management, allowing NGOs to display information, share updates, and engage
-                                    with their audience seamlessly. Key features include donation integrations, event
-                                    listings, and volunteer sign-up forms, to support the NGOs' objectives.
-                                    Umanità simplifies website creation, enabling organizations to focus on their core
-                                    mission while enhancing their online reach and impact. </p>
+                                <p>A platform designed for NGOs to create and manage customizable websites that showcase
+                                    their missions. Built with HTML, CSS, and JavaScript, it features donation
+                                    integrations, event listings, and volunteer sign-up forms — enabling organizations
+                                    to enhance their online presence and community engagement.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Website</li>
-                                    <li>Web Development Template</li>
+                                    <li>Web Development</li>
+                                    <li>HTML/CSS/JS</li>
                                 </ul>
                             </div>
 
@@ -646,22 +771,19 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
 
                     <div id="modal-06" hidden>
                         <div class="modal-popup">
-                            <img src="images/portfolio/gallery/ecg.png" alt="" height="10px">
+                            <img src="images/portfolio/gallery/ecg.png" alt="ECG Report Analysis tool screenshot">
 
                             <div class="modal-popup__desc">
                                 <h5>ECG Report Analysis Leveraging Generative AI</h5>
-                                <p>This tool utilizes CNNs to analyze and classify ECG reports with 92% accuracy,
-                                    identifying multiple heart conditions. It provides users with a simplified analysis
-                                    tailored to their profile. Integrating Generative AI, it aims to enable users to
-                                    interact with an LLM model for better understanding, suggesting lifestyle changes,
-                                    and locating nearby cardiologists. Additionally, the tool plans to offer insights
-                                    into the heart's potential future condition based on current trends. While ECG
-                                    classification is complete, further development is focused on enhancing the
-                                    LLM-powered interaction and predictive insights, making it a comprehensive solution
-                                    for heart health monitoring and guidance. </p>
+                                <p>A healthcare tool that uses Convolutional Neural Networks to classify ECG reports
+                                    with 92% accuracy across multiple heart conditions. Integrates Generative AI to
+                                    deliver simplified, profile-aware analyses — suggesting lifestyle changes and
+                                    locating nearby cardiologists. Ongoing development focuses on predictive insights
+                                    for future cardiac health.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>CNN Models</li>
+                                    <li>CNN</li>
                                     <li>Generative AI</li>
+                                    <li>Healthcare</li>
                                 </ul>
                             </div>
 
@@ -669,8 +791,6 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                     </div> <!-- end modal -->
 
                 </div> <!-- end works-portfolio -->
-
-            </section> <!-- end s-works -->
 
             </section> <!-- end s-works -->
 
@@ -686,129 +806,81 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                             Publications
                         </h2>
                         <p class="h1" data-animate-el>
-                            Explore my research work, published in well-regarded IEEE and Springer publications.
+                            Peer-reviewed research published in IEEE and Springer venues.
                         </p>
 
 
                         <div class="publication-list">
                             <!-- Publication 1 -->
-                            <div class="publication-item" data-animate-el
-                                style="background: hsla(36, 72%, 70%, 1); border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; margin-bottom: 15px;">
-                                <strong style="font-size: 2rem; color: #000; margin-bottom: 5px;">Emerging Applications
-                                    and Challenges in
-                                    Quantum Computing: A Literature Survey</strong><br>
-                                <em style="color: #000; font-size: 1.5rem; margin-bottom: 5px;">Literature
-                                    Survey</em><br>
-                                <p style="margin-top: 5px; font-size: 1.5rem; color: #000; margin-bottom: 5px;">This
-                                    paper provides an
-                                    extensive survey of the current applications of quantum computing, highlighting
-                                    emerging opportunities and key challenges that need to be addressed for its future
-                                    growth.</p>
-                                <span
-                                    style="font-weight: bold; font-size: 1.5rem; color: #000; margin-bottom: 5px;">Published
-                                    in IEEE
-                                    Xplore.</span><br>
+                            <div class="publication-item pub-card" data-animate-el>
+                                <div class="pub-card__venue">IEEE Xplore</div>
+                                <h5 class="pub-card__title">Emerging Applications and Challenges in Quantum Computing: A
+                                    Literature Survey</h5>
+                                <p class="pub-card__type">Literature Survey</p>
+                                <p class="pub-card__desc">An extensive survey of current quantum computing applications,
+                                    highlighting emerging opportunities and key challenges for future growth.</p>
                                 <a href="https://ieeexplore.ieee.org/abstract/document/10645271" target="_blank"
-                                    style="color: #000; font-weight: bold; font-size: 1.2rem; text-decoration: none; margin-top: 10px; display: inline-block;">View
-                                    Paper</a>
+                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
                             </div>
 
                             <!-- Publication 2 -->
-                            <div class="publication-item" data-animate-el
-                                style="background: hsla(36, 72%, 70%, 1); border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; margin-bottom: 15px;">
-                                <strong style="font-size: 2rem; color: #000; margin-bottom: 5px;">Topic Modeling for
-                                    Identifying Emerging
-                                    Trends on Instagram Using Latent Dirichlet Allocation and Non-Negative Matrix
-                                    Factorization</strong><br>
-                                <em style="color: #000; font-size: 1.5rem; margin-bottom: 5px;">Research on Trend
-                                    Analysis Using LDA and
-                                    NMF</em><br>
-                                <p style="margin-top: 5px; font-size: 1.5rem; color: #000; margin-bottom: 5px;">This
-                                    research
-                                    investigates trend identification on Instagram by leveraging Latent Dirichlet
-                                    Allocation (LDA) and Non-Negative Matrix Factorization (NMF), offering valuable
-                                    insights into evolving online trends.</p>
-                                <span
-                                    style="font-weight: bold; font-size: 1.5rem; color: #000; margin-bottom: 5px;">Published
-                                    in IEEE
-                                    Xplore.</span><br>
+                            <div class="publication-item pub-card" data-animate-el>
+                                <div class="pub-card__venue">IEEE Xplore</div>
+                                <h5 class="pub-card__title">Topic Modeling for Identifying Emerging Trends on Instagram
+                                    Using LDA and NMF</h5>
+                                <p class="pub-card__type">Research Paper</p>
+                                <p class="pub-card__desc">Investigates trend identification on Instagram by leveraging
+                                    Latent Dirichlet Allocation (LDA) and Non-Negative Matrix Factorization (NMF),
+                                    offering insights into evolving online trends.</p>
                                 <a href="https://ieeexplore.ieee.org/document/10717021" target="_blank"
-                                    style="color: #000; font-weight: bold; font-size: 1.2rem; text-decoration: none; margin-top: 10px; display: inline-block;">View
-                                    Paper</a>
-                            </div>
-
-                            <!-- Publication 5 -->
-                            <div class="publication-item" data-animate-el
-                                style="background: hsla(36, 72%, 70%, 1); border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; margin-bottom: 15px;">
-                                <strong style="font-size: 2rem; color: #000; margin-bottom: 5px;">Blockchain-Based Smart Contracts for Decentralized Vehicle-to-Grid (V2G) Load Management</strong><br>
-                                <em style="color: #000; font-size: 1.5rem; margin-bottom: 5px;">Smart Contract
-                                    Implementation and
-                                    Research Study</em><br>
-                                <p style="margin-top: 5px; font-size: 1.5rem; color: #000; margin-bottom: 5px;">This
-                                    study presents a
-                                    decentralized Vehicle-to-Grid (V2G) Load Management system that facilitates
-                                    efficient energy transfers between Electric Vehicles (EVs) and the power grid using
-                                    smart contracts. Developed in Solidity on the Ethereum blockchain, the system
-                                    dynamically manages grid demand while ensuring secure transactions. This research
-                                    highlights the potential of blockchain
-                                    technology in enhancing energy management, paving the way for sustainable EV
-                                    integration and smart grid operations</p>
-                                <span
-                                    style="font-weight: bold; font-size: 1.5rem; color: #000; margin-bottom: 5px;">Published
-                                    in IEEE
-                                    Xplore.</span><br>
-                                <a href="https://ieeexplore.ieee.org/document/10866137" target="_blank"
-                                    style="color: #000; font-weight: bold; font-size: 1.2rem; text-decoration: none; margin-top: 10px; display: inline-block;">View Paper 
-                                </a>
+                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
                             </div>
 
                             <!-- Publication 3 -->
-                            <div class="publication-item" data-animate-el
-                                style="background: hsla(36, 72%, 70%, 1); border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; margin-bottom: 15px;">
-                                <strong style="font-size: 2rem; color: #000; margin-bottom: 5px;">FoodMO: A Food
-                                    Nutrient Analysis
-                                    Application Using Optical Character Recognition and Machine Learning</strong><br>
-                                <em style="color: #000; font-size: 1.5rem; margin-bottom: 5px;">Technical Paper on
-                                    Application
-                                    Implementation</em><br>
-                                <p style="margin-top: 5px; font-size: 1.5rem; color: #000; margin-bottom: 5px;">This
-                                    paper discusses the
-                                    development of FoodMO, a mobile application that uses OCR and machine learning to
-                                    analyze food nutrients, aiming to provide healthier dietary options through
-                                    automated analysis.</p>
-                                <span style="font-weight: bold; font-size: 1.5rem; color: #000; margin-bottom: 5px;">Published in Springer LNNS Series.</span><br>
-                                <a href="https://link.springer.com/chapter/10.1007/978-981-97-8526-1_47" target="_blank"
-                                    style="color: #000; font-weight: bold; font-size: 1.2rem; text-decoration: none; margin-top: 10px; display: inline-block;">View Paper</a>
+                            <div class="publication-item pub-card" data-animate-el>
+                                <div class="pub-card__venue">IEEE Xplore</div>
+                                <h5 class="pub-card__title">Blockchain-Based Smart Contracts for Decentralized
+                                    Vehicle-to-Grid (V2G) Load Management</h5>
+                                <p class="pub-card__type">Smart Contract Implementation & Research</p>
+                                <p class="pub-card__desc">Presents a decentralized V2G system using Solidity smart
+                                    contracts on Ethereum to dynamically manage grid demand while ensuring secure energy
+                                    transactions between EVs and the power grid.</p>
+                                <a href="https://ieeexplore.ieee.org/document/10866137" target="_blank"
+                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
                             </div>
 
                             <!-- Publication 4 -->
-                            <div class="publication-item" data-animate-el
-                                style="background: hsla(36, 72%, 70%, 1); border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; margin-bottom: 15px;">
-                                <strong style="font-size: 2rem; color: #000; margin-bottom: 5px;">Natural Language
-                                    Processing: A Survey of
-                                    Approaches, Applications, and Future Directions</strong><br>
-                                <em style="color: #000; font-size: 1.5rem; margin-bottom: 5px;">Comprehensive Literature
-                                    Review</em><br>
-                                <p style="margin-top: 5px; font-size: 1.5rem; color: #000; margin-bottom: 5px;">A
-                                    thorough survey of NLP
-                                    techniques, this paper covers the latest approaches, real-world applications, and
-                                    future directions for research in natural language processing.</p>
-                                <span
-                                    style="font-weight: bold; font-size: 1.5rem; color: #000; margin-bottom: 5px;">Published
-                                    in IEEE
-                                    Xplore.</span><br>
-                                <a href="https://ieeexplore.ieee.org/abstract/document/10941573" target="_blank"
-                                    style="color: #000; font-weight: bold; font-size: 1.2rem; text-decoration: none; margin-top: 10px; display: inline-block;">View Paper</a>
+                            <div class="publication-item pub-card" data-animate-el>
+                                <div class="pub-card__venue">Springer LNNS</div>
+                                <h5 class="pub-card__title">FoodMO: A Food Nutrient Analysis Application Using OCR and
+                                    Machine Learning</h5>
+                                <p class="pub-card__type">Technical Paper</p>
+                                <p class="pub-card__desc">Details the development of FoodMO — a mobile application that
+                                    uses OCR and machine learning to analyze food nutrients and provide healthier
+                                    dietary recommendations.</p>
+                                <a href="https://link.springer.com/chapter/10.1007/978-981-97-8526-1_47" target="_blank"
+                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
                             </div>
 
-                            
+                            <!-- Publication 5 -->
+                            <div class="publication-item pub-card" data-animate-el>
+                                <div class="pub-card__venue">IEEE Xplore</div>
+                                <h5 class="pub-card__title">Natural Language Processing: A Survey of Approaches,
+                                    Applications, and Future Directions</h5>
+                                <p class="pub-card__type">Literature Review</p>
+                                <p class="pub-card__desc">A comprehensive survey of NLP techniques covering the latest
+                                    approaches, real-world applications, and promising future directions for research.
+                                </p>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10941573" target="_blank"
+                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
+                            </div>
+
                         </div>
+                    </div>
+                </div>
+            </section> <!-- end publications -->
 
 
-
-
-
-            </section> <!-- end s-works -->
             <!-- ### contact
             ================================================== -->
             <section id="contact" class="s-contact target-section">
@@ -820,11 +892,8 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                         </h2>
 
                         <p class="h1">
-                            I would love to interact with you :) <br>
-                            Whether you have a question or just
-                            want to chat about what model to choose for your next ML project, discuss about Gen AI or
-                            web designing —
-                            shoot me a message.
+                            Whether you're exploring a collaboration, looking for a data-driven problem-solver, or just
+                            want to connect about ML, NLP, or data science — I'd love to hear from you.
                         </p>
                     </div>
                 </div> <!-- end contact-top -->
@@ -833,18 +902,20 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
                     <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
                         <h3 class="text-pretitle2">Reach me at</h3>
                         <p class="contact-links">
-                            <a href="mailto:ishmeengarewal@gmail.com" class="mailtoui">ishmeengarewal@gmail.com</a> <br>
+                            <a href="mailto:ishmeengarewal@gmail.com" class="mailtoui">ishmeengarewal@gmail.com</a>
                         </p>
                     </div>
                     <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
                         <h3 class="text-pretitle2">Social</h3>
                         <ul class="contact-social">
-                            <li><a href="https://www.linkedin.com/in/ishmeen-garewal/">LinkedIn</a></li><br>
-                            <li><a href="https://github.com/ishmeen-11">Github</a></li><br>
-                            <li><a href="https://scholar.google.ca/citations?user=CW0MP1gAAAAJ&hl=en">Google
-                                    Scholar</a></li><br>
-                            <li><a href="https://medium.com/@ishmeengarewal">Medium</a>
-                            </li>
+                            <li><a href="https://www.linkedin.com/in/ishmeen-garewal/" target="_blank"
+                                    rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://github.com/ishmeen-11" target="_blank"
+                                    rel="noopener noreferrer">Github</a></li>
+                            <li><a href="https://scholar.google.ca/citations?user=CW0MP1gAAAAJ&hl=en" target="_blank"
+                                    rel="noopener noreferrer">Google Scholar</a></li>
+                            <li><a href="https://medium.com/@ishmeengarewal" target="_blank"
+                                    rel="noopener noreferrer">Medium</a></li>
                         </ul>
                     </div>
                     <div class="column lg-4 md-12 contact-block">
@@ -864,7 +935,7 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
 
             <div class="row">
                 <div class="column ss-copyright">
-                    <span>Ishmeen 2025</span>
+                    <span>Ishmeen 2026</span>
                 </div>
 
                 <div class="ss-go-top">
@@ -891,14 +962,3 @@ In Spring 2026, I am expanding this foundation through advanced courses in Machi
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
