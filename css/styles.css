@@ -75,16 +75,16 @@
 /* ------------------------------------------------------------------- 
  * ## fonts 
  * ------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
 
 :root {
 
-    --font-1: "Public Sans", sans-serif;
-    --font-2: "DM Serif Display", serif;
+    --font-1: "Inter", sans-serif;
+    --font-2: "Fira Code", monospace;
 
     /* monospace
     */
-    --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+    --font-mono: "Fira Code", Consolas, "Andale Mono", Courier, monospace;
 }
 
 /* ------------------------------------------------------------------- 
@@ -92,22 +92,24 @@
  * ------------------------------------------------------------------- */
 :root {
 
-    /* color-1(#eabe7c)
-     * color-2(#23967f)
+    /* color-1: Neon Cyan for data tech vibe
+     * color-2: Deep Purple for accents
      */
-    --color-1: hsla(36, 72%, 70%, 1);
-    --color-2: hsla(168, 62%, 36%, 1);
+    --color-1: hsla(189, 94%, 43%, 1);
+    /* #06b6d4 */
+    --color-2: hsla(271, 91%, 65%, 1);
+    /* #a855f7 */
 
     /* theme color variations
      */
-    --color-1-lighter: hsla(36, 72%, 90%, 1);
-    --color-1-light: hsla(36, 72%, 80%, 1);
-    --color-1-dark: hsla(36, 72%, 60%, 1);
-    --color-1-darker: hsla(36, 72%, 50%, 1);
-    --color-2-lighter: hsla(168, 62%, 56%, 1);
-    --color-2-light: hsla(168, 62%, 46%, 1);
-    --color-2-dark: hsla(168, 62%, 26%, 1);
-    --color-2-darker: hsla(168, 62%, 16%, 1);
+    --color-1-lighter: hsla(189, 94%, 80%, 1);
+    --color-1-light: hsla(189, 94%, 60%, 1);
+    --color-1-dark: hsla(189, 94%, 30%, 1);
+    --color-1-darker: hsla(189, 94%, 20%, 1);
+    --color-2-lighter: hsla(271, 91%, 85%, 1);
+    --color-2-light: hsla(271, 91%, 75%, 1);
+    --color-2-dark: hsla(271, 91%, 45%, 1);
+    --color-2-darker: hsla(271, 91%, 25%, 1);
 
     /* feedback colors
      * color-error(#ffd1d2), color-success(#c8e675), 
@@ -179,9 +181,25 @@
 
     /* others
      */
-    --color-body: var(--color-gray-10);
-    --color-border: rgba(255, 255, 255, .05);
-    --border-radius: 3px;
+    --color-body: var(--color-gray-12);
+    /* Slightly darker slate */
+    --color-border: rgba(6, 182, 212, 0.2);
+    /* Cyan border */
+    --border-radius: 6px;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.s-intro .intro-content {
+    position: relative;
+    z-index: 2;
 }
 
 /* ------------------------------------------------------------------- 
@@ -575,20 +593,33 @@ a {
 }
 
 .publication-item {
-    background: hsla(36, 72%, 50%, 1);
+    background: rgba(15, 23, 42, 0.8);
+    /* Deep slate with opacity */
+    border: 1px solid var(--color-1);
+    /* Cyan border */
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.1);
+    /* Neon cyan glow */
     padding: 20px;
     margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+    box-shadow: 0 6px 20px rgba(6, 182, 212, 0.3);
+    /* Stronger glow on hover */
+    transform: translateY(-3px);
 }
 
 .project-header strong {
     font-size: 2rem;
-    color: #fff;
+    color: var(--color-white);
+    font-family: var(--font-2);
+    /* Use monospace for project headers */
 }
 
 .project-item a {
-    color: hsla(36, 72%, 90%, 1);
+    color: var(--color-1);
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
@@ -598,18 +629,20 @@ a {
 
 .project-item a:hover {
     text-decoration: underline;
+    color: var(--color-1-lighter);
 }
 
 .project-item p {
     font-size: 1.5rem;
-    color: #ffe4b5;
+    color: var(--color-gray-2);
     margin-top: 10px;
 }
 
 .project-item span {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--color-white);
+    font-family: var(--font-2);
 }
 
 svg,
@@ -3650,12 +3683,15 @@ about-info {
 .timeline::before {
     content: "";
     display: block;
-    width: 1px;
+    width: 2px;
     height: calc(100% - var(--timeline-top-adjust));
-    background-color: var(--color-border);
+    background-color: var(--color-1);
+    /* Cyan pipeline line */
     position: absolute;
     top: var(--timeline-top-adjust);
-    left: 3px;
+    left: 4px;
+    box-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+    /* Glow effect */
 }
 
 .timeline__block {
@@ -3670,13 +3706,18 @@ about-info {
 
 .timeline__bullet {
     display: block;
-    height: 8px;
-    width: 8px;
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
-    background-color: var(--color-1);
+    background-color: var(--color-body);
+    /* Hollow center */
+    border: 3px solid var(--color-1);
+    /* Cyan ring */
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.8);
     position: absolute;
     top: var(--timeline-top-adjust);
-    left: 0;
+    left: -2px;
+    /* Center on line */
 }
 
 .timeline__title {
@@ -3685,6 +3726,7 @@ about-info {
     font-size: var(--text-lg);
     margin-top: 0;
     margin-bottom: var(--vspace-0_125);
+    color: var(--color-white);
 }
 
 .timeline__meta {
@@ -3693,14 +3735,19 @@ about-info {
     font-size: calc(var(--text-size) * 1.1053);
     margin-top: 0;
     margin-bottom: var(--vspace-0_125);
+    color: var(--color-2-lighter);
+    /* Purple-ish accent for subtitle */
 }
 
 .timeline__timeframe {
+    font-family: var(--font-2);
+    /* Monospace font */
     font-size: var(--text-xs);
     line-height: var(--vspace-0_75);
     text-transform: uppercase;
-    letter-spacing: .2em;
-    color: var(--color-text-light);
+    letter-spacing: .1em;
+    color: var(--color-1-light);
+    /* Lighter cyan */
     margin-top: -.2rem;
 }
 
@@ -4534,6 +4581,7 @@ p,
         opacity: 0;
         transform: translateY(12px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -4545,15 +4593,41 @@ p,
     opacity: 0;
 }
 
-.skills-pills .skill-pill:nth-child(1) { animation-delay: 0.05s; }
-.skills-pills .skill-pill:nth-child(2) { animation-delay: 0.1s; }
-.skills-pills .skill-pill:nth-child(3) { animation-delay: 0.15s; }
-.skills-pills .skill-pill:nth-child(4) { animation-delay: 0.2s; }
-.skills-pills .skill-pill:nth-child(5) { animation-delay: 0.25s; }
-.skills-pills .skill-pill:nth-child(6) { animation-delay: 0.3s; }
-.skills-pills .skill-pill:nth-child(7) { animation-delay: 0.35s; }
-.skills-pills .skill-pill:nth-child(8) { animation-delay: 0.4s; }
-.skills-pills .skill-pill:nth-child(9) { animation-delay: 0.45s; }
+.skills-pills .skill-pill:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.skills-pills .skill-pill:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.skills-pills .skill-pill:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.skills-pills .skill-pill:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.skills-pills .skill-pill:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.skills-pills .skill-pill:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.skills-pills .skill-pill:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.skills-pills .skill-pill:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+.skills-pills .skill-pill:nth-child(9) {
+    animation-delay: 0.45s;
+}
 
 /* responsive skills */
 @media screen and (max-width: 800px) {
@@ -4672,16 +4746,16 @@ p,
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--color-1);
-    background: rgba(234, 190, 124, 0.1);
-    border: 1px solid rgba(234, 190, 124, 0.2);
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.2);
     border-radius: 100px;
     line-height: 1.5;
     transition: all 0.3s ease;
 }
 
 .folio-list__item-link:hover .tag-pill {
-    background: rgba(234, 190, 124, 0.2);
-    border-color: rgba(234, 190, 124, 0.4);
+    background: rgba(6, 182, 212, 0.2);
+    border-color: rgba(6, 182, 212, 0.4);
 }
 
 
