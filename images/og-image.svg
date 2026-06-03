@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C5CC4"/>
+      <stop offset="0.5" stop-color="#9B7EDE"/>
+      <stop offset="1" stop-color="#6CACE4"/>
+    </linearGradient>
+    <radialGradient id="b1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9B7EDE" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#9B7EDE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6CACE4" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#6CACE4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E48DBE" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#E48DBE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#FAF8FE"/>
+  <ellipse cx="120" cy="90" rx="420" ry="420" fill="url(#b1)"/>
+  <ellipse cx="1120" cy="80" rx="380" ry="380" fill="url(#b2)"/>
+  <ellipse cx="1050" cy="600" rx="460" ry="420" fill="url(#b3)"/>
+
+  <!-- mandala motif -->
+  <g transform="translate(960,315)" fill="none" stroke="#9B7EDE" stroke-width="1.4" opacity="0.35" stroke-linejoin="round">
+    <circle r="36"/>
+    <circle r="78"/>
+    <circle r="122"/>
+    <circle r="168"/>
+    <circle r="212"/>
+    <g id="ogp">
+      <path d="M0,-205 C40,-150 40,-105 0,-128 C-40,-105 -40,-150 0,-205 Z"/>
+      <path d="M0,-118 C26,-78 26,-42 0,-20 C-26,-42 -26,-78 0,-118 Z"/>
+    </g>
+    <use href="#ogp" transform="rotate(30)"/>
+    <use href="#ogp" transform="rotate(60)"/>
+    <use href="#ogp" transform="rotate(90)"/>
+    <use href="#ogp" transform="rotate(120)"/>
+    <use href="#ogp" transform="rotate(150)"/>
+    <use href="#ogp" transform="rotate(180)"/>
+    <use href="#ogp" transform="rotate(210)"/>
+    <use href="#ogp" transform="rotate(240)"/>
+    <use href="#ogp" transform="rotate(270)"/>
+    <use href="#ogp" transform="rotate(300)"/>
+    <use href="#ogp" transform="rotate(330)"/>
+  </g>
+
+  <!-- text -->
+  <g transform="translate(90,0)">
+    <rect x="0" y="150" width="168" height="44" rx="22" fill="none" stroke="#9B7EDE" stroke-width="1.5"/>
+    <text x="84" y="178" text-anchor="middle" font-family="'Courier New', monospace" font-size="17"
+      letter-spacing="3" fill="#7C5CC4">PORTFOLIO</text>
+
+    <text x="-3" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="700"
+      fill="#2A2440">Ishmeen Garewal</text>
+
+    <text x="0" y="360" font-family="Georgia, serif" font-size="38" font-style="italic" fill="url(#accent)">
+      Data Scientist &amp; ML Researcher</text>
+
+    <text x="0" y="430" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#56506E">
+      MS Data Science @ Columbia · Machine Learning · Causal Inference</text>
+    <text x="0" y="466" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#56506E">
+      Forecasting · 5 IEEE / Springer publications</text>
+
+    <rect x="0" y="500" width="150" height="6" rx="3" fill="url(#accent)"/>
+  </g>
+</svg>

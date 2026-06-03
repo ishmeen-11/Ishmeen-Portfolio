@@ -346,6 +346,115 @@
     }; // end ssMoveTo
 
 
+    /* GitHub Integration
+     * ------------------------------------------------------ */
+    const ssGithubIntegration = async function () {
+        const repoList = document.getElementById('github-repo-list');
+        if (!repoList) return;
+
+        try {
+            const response = await fetch('https://api.github.com/users/ishmeen-11/repos?sort=updated&per_page=4');
+            if (!response.ok) throw new Error('Network response was not ok');
+            const data = await response.json();
+
+            repoList.innerHTML = ''; // clear loading state
+            data.forEach(repo => {
+                const li = document.createElement('li');
+                li.className = 'folio-list__item column';
+                
+                // Add animate classes
+                li.setAttribute('data-animate-el', '');
+                
+                const lang = repo.language ? `<span class="tag-pill">${repo.language}</span>` : '';
+                
+                li.innerHTML = `
+                    <a class="folio-list__item-link" href="${repo.html_url}" target="_blank" rel="noopener noreferrer" style="display:block; padding: 20px; background: var(--color-gray-10); border: 1px solid var(--color-border); border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                        <div class="folio-list__item-text" style="padding: 0;">
+                            <div class="folio-list__item-cat" style="font-family: var(--font-1); color: var(--color-1);">
+                                Open Source Repo
+                            </div>
+                            <div class="folio-list__item-title" style="margin-top: 5px; font-size: 1.8rem; font-weight: 600;">
+                                ${repo.name}
+                            </div>
+                            <p style="font-size: 1.4rem; color: var(--color-gray-2); margin-top: 10px; min-height: 40px;">
+                                ${repo.description ? repo.description : 'A cool project by Ishmeen.'}
+                            </p>
+                            <div class="folio-list__item-tags" style="margin-top: 15px;">
+                                ${lang}
+                                <span class="tag-pill">⭐ ${repo.stargazers_count}</span>
+                                <span class="tag-pill">🍴 ${repo.forks_count}</span>
+                            </div>
+                        </div>
+                    </a>
+                `;
+                repoList.appendChild(li);
+            });
+        } catch (error) {
+            console.error('Error fetching GitHub repos:', error);
+            repoList.innerHTML = '<p>Could not load GitHub projects at this time.</p>';
+        }
+    };
+
+    /* Medium Integration
+     * ------------------------------------------------------ */
+    const ssMediumIntegration = async function () {
+        const articleList = document.getElementById('medium-article-list');
+        if (!articleList) return;
+
+        try {
+            const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ishmeengarewal');
+            if (!response.ok) throw new Error('Network response was not ok');
+            const data = await response.json();
+
+            articleList.innerHTML = ''; // clear loading state
+            
+            // Only take the first 4 articles
+            const articles = data.items.slice(0, 4);
+
+            articles.forEach(article => {
+                const li = document.createElement('li');
+                li.className = 'folio-list__item column';
+                
+                // Add animate classes
+                li.setAttribute('data-animate-el', '');
+                
+                // Extract categories/tags
+                let tagsHTML = '';
+                if (article.categories && article.categories.length > 0) {
+                    tagsHTML = article.categories.slice(0, 2).map(cat => `<span class="tag-pill">${cat}</span>`).join('');
+                }
+                
+                // create clean snippet
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = article.description;
+                const snippet = tempDiv.textContent.substring(0, 100) + '...';
+
+                li.innerHTML = `
+                    <a class="folio-list__item-link" href="${article.link}" target="_blank" rel="noopener noreferrer" style="display:block; padding: 20px; background: var(--color-gray-10); border: 1px solid var(--color-border); border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                        <div class="folio-list__item-text" style="padding: 0;">
+                            <div class="folio-list__item-cat" style="font-family: var(--font-1); color: var(--color-1);">
+                                Article • ${new Date(article.pubDate).toLocaleDateString()}
+                            </div>
+                            <div class="folio-list__item-title" style="margin-top: 5px; font-size: 1.8rem; font-weight: 600;">
+                                ${article.title}
+                            </div>
+                            <p style="font-size: 1.4rem; color: var(--color-gray-2); margin-top: 10px; min-height: 40px;">
+                                ${snippet}
+                            </p>
+                            <div class="folio-list__item-tags" style="margin-top: 15px;">
+                                ${tagsHTML}
+                            </div>
+                        </div>
+                    </a>
+                `;
+                articleList.appendChild(li);
+            });
+        } catch (error) {
+            console.error('Error fetching Medium articles:', error);
+            articleList.innerHTML = '<p>Could not load articles at this time.</p>';
+        }
+    };
+
     /* Initialize
      * ------------------------------------------------------ */
     (function ssInit() {
@@ -358,6 +467,8 @@
         ssLightbox();
         ssAlertBoxes();
         ssMoveTo();
+        ssGithubIntegration();
+        ssMediumIntegration();
 
     })();
 

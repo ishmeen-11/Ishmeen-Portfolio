@@ -1,1153 +1,685 @@
 <!DOCTYPE html>
-<html class="no-js ss-preload" lang="en">
+<html lang="en">
 
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
     <meta charset="utf-8">
     <title>Ishmeen Garewal — Data Scientist & ML Researcher</title>
     <meta name="description"
-        content="Portfolio of Ishmeen Garewal — MS in Data Science at Columbia University | ML & NLP Enthusiast | Tech for Social Good. 5 IEEE/Springer publications.">
+        content="Ishmeen Garewal — MS in Data Science at Columbia University. Machine learning, causal inference, forecasting & AI. 5 IEEE/Springer publications.">
     <meta name="author" content="Ishmeen Garewal">
     <meta name="google-site-verification" content="N4e3SIglciPJJj9xt3dGZ2HbnzJpAaA4p4KjhfLyBA8" />
 
-    <!-- Open Graph / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ishmeen Garewal — Data Scientist & ML Researcher">
     <meta property="og:description"
-        content="MS in Data Science @ Columbia · 5 IEEE/Springer publications · IIT Roorkee · Deloitte · Machine Learning · NLP · Tech for Social Good">
+        content="MS in Data Science @ Columbia · 5 IEEE/Springer publications · Machine Learning · Causal Inference · Forecasting">
     <meta property="og:url" content="https://ishmeen-11.github.io/Ishmeen-Portfolio/">
-
-    <!-- Twitter Card -->
+    <meta property="og:image" content="https://ishmeen-11.github.io/Ishmeen-Portfolio/images/about-photo.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ishmeen Garewal — Data Scientist & ML Researcher">
     <meta name="twitter:description"
-        content="MS in Data Science @ Columbia · 5 IEEE/Springer publications · Machine Learning · NLP · Healthcare AI">
+        content="MS in Data Science @ Columbia · Machine Learning · Causal Inference · Forecasting · 5 IEEE/Springer publications">
+    <meta name="twitter:image" content="https://ishmeen-11.github.io/Ishmeen-Portfolio/images/about-photo.jpg">
 
-    <!-- mobile specific metas
-    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google Fonts -->
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap">
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/app.css">
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="icon" type="image/svg+xml" href="./favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ishmeen Garewal",
+        "url": "https://ishmeen-11.github.io/Ishmeen-Portfolio/",
+        "image": "https://ishmeen-11.github.io/Ishmeen-Portfolio/images/about-photo.jpg",
+        "jobTitle": "Data Scientist",
+        "email": "mailto:ishmeengarewal@gmail.com",
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Columbia University" },
+            { "@type": "CollegeOrUniversity", "name": "University of Mumbai" }
+        ],
+        "worksFor": { "@type": "Organization", "name": "Artie" },
+        "knowsAbout": ["Machine Learning", "Causal Inference", "Forecasting", "Natural Language Processing", "Deep Learning", "Data Science"],
+        "sameAs": [
+            "https://www.linkedin.com/in/ishmeen-garewal/",
+            "https://github.com/ishmeen-11",
+            "https://scholar.google.ca/citations?user=CW0MP1gAAAAJ&hl=en",
+            "https://medium.com/@ishmeengarewal"
+        ]
+    }
+    </script>
 </head>
 
 <body id="top">
 
+    <div id="progress"></div>
 
-    <!-- # preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+        <a class="brand" href="#top">Ishmeen<span>.</span></a>
+
+        <div class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a class="btn btn-primary menu-only" href="assets/Resume_IshmeenG.pdf" target="_blank"
+                rel="noopener">Résumé</a>
         </div>
-    </div>
 
-
-    <!-- # page wrap
-    ================================================== -->
-    <div class="s-pagewrap">
-
-        <div class="circles">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-cta">
+            <a class="btn btn-primary" href="assets/Resume_IshmeenG.pdf" target="_blank" rel="noopener">Résumé</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>
         </div>
-
-
-        <!-- ## site header 
-        ================================================== -->
-        <header class="s-header">
-
-            <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html">Ishmeen.</a></span>
-                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
-            </div>
-
-            <div class="row wide main-nav-wrap">
-                <nav class="column lg-12 main-nav">
-                    <ul>
-                        <li><a href="index.html" class="home-link">Ishmeen</a></li>
-                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#skills" class="smoothscroll">Skills</a></li>
-                        <li><a href="#works" class="smoothscroll">Works</a></li>
-                        <li><a href="#contact" class="smoothscroll">Get in Touch</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header> <!-- end s-header -->
-
-
-        <!-- ## main content
-        ==================================================- -->
-        <main class="s-content">
-
-
-            <!-- ### intro
-            ================================================== -->
-            <section id="intro" class="s-intro target-section">
-
-                <div id="particles-js"></div>
-
-                <div class="row intro-content wide">
-
-                    <div class="column">
-                        <div class="text-pretitle with-line">
-                            Hello World
-                        </div>
-
-                        <h1 class="text-huge-title">
-                            I'm Ishmeen,<br>
-                            a Data Scientist building intelligent systems at the intersection of ML, NLP &amp Deep
-                            Learning.
-                        </h1>
-                    </div>
-
-                    <ul class="intro-social">
-                        <li><a href="https://www.linkedin.com/in/ishmeen-garewal/" target="_blank"
-                                rel="noopener noreferrer">LinkedIn</a></li>
-                        <li><a href="https://github.com/ishmeen-11" target="_blank" rel="noopener noreferrer">Github</a>
-                        </li>
-                        <li><a href="https://scholar.google.ca/citations?user=CW0MP1gAAAAJ&hl=en" target="_blank"
-                                rel="noopener noreferrer">Google Scholar</a></li>
-                        <li><a href="https://medium.com/@ishmeengarewal" target="_blank"
-                                rel="noopener noreferrer">Medium</a></li>
-                    </ul>
-
-                </div> <!-- end intro content -->
-
-                <a href="#about" class="intro-scrolldown smoothscroll">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                        fill-rule="evenodd" clip-rule="evenodd">
-                        <path
-                            d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
-                    </svg>
-                </a>
-
-            </section> <!-- end s-intro -->
-
-
-            <!-- ### about
-            ================================================== -->
-            <section id="about" class="s-about target-section">
-
-
-                <div class="row about-info wide" data-animate-block>
-
-                    <div class="column lg-6 md-12 about-info__pic-block">
-                        <img src="images/about-photo.jpg"
-                            srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x"
-                            alt="Ishmeen Garewal portrait" class="about-info__pic" data-animate-el>
-                    </div>
-
-                    <div class="column lg-6 md-12">
-                        <div class="about-info__text">
-
-                            <h2 class="text-pretitle with-line" data-animate-el>
-                                About
-                            </h2>
-                            <p class="attention-getter" data-animate-el
-                                style="word-spacing: normal; letter-spacing: normal;">
-                                I'm a Master's in Data Science student at <strong>Columbia University</strong> with a
-                                background in Computer Engineering (CGPA 9.66/10) and <strong>5 peer-reviewed
-                                    publications</strong> in IEEE and Springer. My work spans machine learning, NLP, and
-                                deep learning — applied to real-world challenges in healthcare, traffic safety, and
-                                social impact. I've interned at <strong>Deloitte</strong> and <strong>IIT
-                                    Roorkee</strong>, and currently serve as a Graduate Student Assistant at the
-                                <strong>Northeast Big Data Innovation Hub</strong> at Columbia.
-                            </p>
-                            <a href="assets/Resume_IshmeenG.pdf" class="btn btn--medium u-fullwidth"
-                                data-animate-el>Download Resume</a>
-
-                        </div>
-                    </div>
-                </div> <!-- about-info -->
-
-
-                <div class="row about-timelines" data-animate-block>
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-stuff" data-animate-el>
-                            Experience
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Northeast Big Data Innovation Hub</h4>
-                                    <h5 class="timeline__meta">Graduate Student Assistant · Columbia University</h5>
-                                    <p class="timeline__timeframe">Jan 2026 – Present</p>
-                                </div>
-                                <div class="timeline__desc" align="justify">
-                                    <ul>
-                                        <li>Developing healthcare digital twin prototype integrating multi-source
-                                            physiological datasets for patient-level treatment simulation.</li>
-                                        <li>Constructing structured and time-series feature pipelines to support
-                                            predictive modeling experiments.</li>
-                                        <li>Delivered Advanced Excel workshop to 25+ MS Data Science students; currently
-                                            developing an Advanced SQL workshop.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Indian Institute of Technology (IIT), Roorkee</h4>
-                                    <h5 class="timeline__meta">Project Intern</h5>
-                                    <p class="timeline__timeframe">May 2025 – Aug 2025</p>
-                                </div>
-                                <div class="timeline__desc" align="justify">
-                                    <ul>
-                                        <li>Analyzed 5,000+ vehicular trajectories using spatiotemporal modeling,
-                                            validating data quality and consistency with &lt;2% error.</li>
-                                        <li>Engineered behavioral and efficiency metrics (gap acceptance, yielding,
-                                            speed compliance) across 10+ maneuver types, improving model classification
-                                            accuracy by 18%.</li>
-                                        <li>Designed and evaluated ML-based decision systems using fine-tuned BERT and
-                                            retrieval-augmented pipelines, achieving a 22% accuracy lift over rule-based
-                                            baselines.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Deloitte Touche Tohmatsu India LLP - Financial Advisory
-                                    </h4>
-                                    <h5 class="timeline__meta">Intern</h5>
-                                    <p class="timeline__timeframe">Jun 2024 – Jul 2024</p>
-                                </div>
-                                <div class="timeline__desc" align="justify">
-                                    <ul>
-                                        <li>Automated FX deal valuation pipeline using QuantLib with REST API
-                                            integrations, reducing manual valuation processing time by 75%.</li>
-                                        <li>Built Django-based visualization dashboard with CI/CD deployment adopted by
-                                            40+ consultants across practice, enhancing reporting efficiency.</li>
-                                        <li>Analyzed RBI vs. NBFC climate risk policies, identifying 3 major gaps with
-                                            actionable mitigation proposals.</li>
-                                        <li>Presented automation framework and policy recommendations to 3 Partners and
-                                            15+ senior leaders.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">FCRIT, University of Mumbai</h4>
-                                    <h5 class="timeline__meta">Research Intern</h5>
-                                    <p class="timeline__timeframe">Jul 2024 – Jan 2025</p>
-                                </div>
-                                <div class="timeline__desc" align="justify">
-                                    <p>Published research at the intersection of NLP, Quantum Computing, and Blockchain
-                                        in IEEE Xplore and Springer.</p>
-                                </div>
-                            </div>
-
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-stuff" data-animate-el>
-                            Education
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Columbia University</h4>
-                                    <h5 class="timeline__meta">Master of Science in Data Science, GPA: 3.6/4</h5>
-                                    <p class="timeline__timeframe">Expected Dec 2026</p>
-                                </div>
-                                <div class="timeline__desc" align="justify">
-                                    <p><strong>Relevant Coursework:</strong> Machine Learning, Statistical Inference,
-                                        Causal Inference, Forecasting, Applied Deep Learning, Data Visualization.</p>
-                                    <p>Collaborating with Columbia Business School MBA students through Analytics in
-                                        Action to solve real industry challenges.</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Fr. Conceicao Rodrigues Institute of Technology</h4>
-                                    <h5 class="timeline__meta">Bachelor of Engineering in Computer Science</h5>
-                                    <p class="timeline__timeframe">Graduated Jun 2025</p>
-                                </div>
-                                <div class="timeline__desc" align="justify">
-                                    <p><strong>CGPA: 9.66/10.0</strong> — Graduated in the top 10% of the class. Core
-                                        coursework in Data Structures, Operating Systems, Machine Learning, Big Data
-                                        Analytics, AI, Blockchain, and Cryptography. Published 5 research papers during
-                                        undergraduate studies.</p>
-                                </div>
-                            </div>
-
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
-
-
-                </div> <!-- end about-timelines -->
-
-            </section> <!-- end s-about -->
-
-
-            <!-- ### skills
-            ================================================== -->
-            <section id="skills" class="s-skills target-section">
-
-                <div class="row skills-content wide" data-animate-block>
-                    <div class="column lg-12">
-
-                        <h2 class="text-pretitle2" data-animate-el>
-                            Skills & Technologies
-                        </h2>
-                        <p class="h1" data-animate-el>
-                            The tools and technologies I work with every day.
-                        </p>
-
-                        <div class="skills-chart-wrapper" data-animate-el style="width: 100%; margin-top: 3rem;">
-                            <div
-                                style="background: rgba(15, 23, 42, 0.6); padding: 2rem; border-radius: 8px; border: 1px solid var(--color-1); box-shadow: 0 4px 12px rgba(6, 182, 212, 0.2); height: 600px; position: relative;">
-                                <!-- Glowing decorative elements -->
-                                <div
-                                    style="position: absolute; top: 1rem; left: 1rem; color: var(--color-1); font-family: 'Fira Code', monospace; font-size: 0.8rem; opacity: 0.7;">
-                                    > neural_network.initialize()</div>
-                                <div id="skillsGraph" style="width: 100%; height: 100%;"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section> <!-- end s-skills -->
-
-
-            <!-- ### works
-            ================================================== -->
-            <section id="works" class="s-works target-section">
-
-
-                <div class="row works-portfolio">
-
-                    <div class="column lg-12" data-animate-block>
-
-                        <h2 class="text-pretitle2" data-animate-el>
-                            Projects
-                        </h2>
-                        <p class="h1" data-animate-el>
-                            A selection of projects I've built — from data analysis to cloud-deployed apps.
-                        </p>
-
-                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-01">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/graph_img.png"
-                                            srcset="images/portfolio/graph_img.png 1x, images/portfolio/graph_img@2x.png 2x"
-                                            alt="Heat's Toll on Health project thumbnail">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Exploratory Data Analysis and Visualization
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Heat's Toll on Health
-                                        </div>
-                                        <div class="folio-list__item-tags">
-                                            <span class="tag-pill">R</span>
-                                            <span class="tag-pill">D3.js</span>
-                                            <span class="tag-pill">ggplot2</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-02">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/foodmo_logo.png"
-                                            srcset="images/portfolio/foodmo_logo.png 1x, images/portfolio/foodmo_logo@2x.png 2x"
-                                            alt="FoodMO app thumbnail">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Application
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            FoodMO: A Food Nutrient Analysis Application
-                                        </div>
-                                        <div class="folio-list__item-tags">
-                                            <span class="tag-pill">Python</span>
-                                            <span class="tag-pill">OCR</span>
-                                            <span class="tag-pill">Random Forest</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-03">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/phy.png"
-                                            srcset="images/portfolio/phy.png 1x, images/portfolio/phy@2x.png 2x"
-                                            alt="Physics IRL AR app thumbnail">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Augmented Reality
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Physics IRL
-                                        </div>
-                                        <div class="folio-list__item-tags">
-                                            <span class="tag-pill">Unity</span>
-                                            <span class="tag-pill">C#</span>
-                                            <span class="tag-pill">AR</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-04">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/movie.png"
-                                            srcset="images/portfolio/movie.png 1x, images/portfolio/movie@2x.png 2x"
-                                            alt="MyReckList recommendation system thumbnail">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Recommendation System
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            MyReckList: Movie Recommendation System
-                                        </div>
-                                        <div class="folio-list__item-tags">
-                                            <span class="tag-pill">Python</span>
-                                            <span class="tag-pill">ALS</span>
-                                            <span class="tag-pill">Collaborative Filtering</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-05">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/umanita.png"
-                                            srcset="images/portfolio/umanita.png 1x, images/portfolio/umanita@2x.png 2x"
-                                            alt="Umanità NGO platform thumbnail">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Website
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Umanità
-                                        </div>
-                                        <div class="folio-list__item-tags">
-                                            <span class="tag-pill">HTML</span>
-                                            <span class="tag-pill">CSS</span>
-                                            <span class="tag-pill">JavaScript</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-06">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/ecglogo.png"
-                                            srcset="images/portfolio/ecglogo.png 1x, images/portfolio/ecglogo@2x.png 2x"
-                                            alt="ECG Report Analysis thumbnail">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Healthcare AI
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            ECG Report Analysis Leveraging Generative AI
-                                        </div>
-                                        <div class="folio-list__item-tags">
-                                            <span class="tag-pill">CNN</span>
-                                            <span class="tag-pill">Gen AI</span>
-                                            <span class="tag-pill">Python</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-07">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/cloud.png"
-                                            srcset="images/portfolio/cloud.png 1x, images/portfolio/cloud@2x.png 2x"
-                                            alt="Cloud-based ToDo List thumbnail">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Cloud Computing
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            ToDo List
-                                        </div>
-                                        <div class="folio-list__item-tags">
-                                            <span class="tag-pill">Django</span>
-                                            <span class="tag-pill">AWS EC2</span>
-                                            <span class="tag-pill">Python</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-08">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/bridgerton.png"
-                                            srcset="images/portfolio/bridgerton.png 1x, images/portfolio/bridgerton.png 2x"
-                                            alt="Bridgerton Watch Party thumbnail">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Web Application
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Bridgerton Watch Party
-                                        </div>
-                                        <div class="folio-list__item-tags">
-                                            <span class="tag-pill">React</span>
-                                            <span class="tag-pill">Gen AI</span>
-                                            <span class="tag-pill">Netlify</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="https://bridgertonparty.netlify.app/"
-                                    title="project link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                        </ul> <!-- end folio-list -->
-
-                    </div> <!-- end column -->
-
-
-                    <!-- Modal Templates Popup
-                    -------------------------------------------- -->
-
-                    <div id="modal-01" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/heat_ss.png"
-                                alt="Heat's Toll on Health project screenshot">
-
-                            <div class="modal-popup__desc">
-                                <h5>Heat's Toll on Health</h5>
-                                <p>Collaborated on an EDAV course project investigating extreme heat's impact on U.S.
-                                    public health. Applied data wrangling, visual analytics (R, D3.js, ggplot2), and
-                                    statistical methods to identify trends in heat-related hospitalizations, emergency
-                                    visits, and mortality across regions and demographics. The analysis reveals which
-                                    populations are most vulnerable and provides data-driven insights to inform public
-                                    health interventions.</p>
-                                <a href="https://ishmeen-11.github.io/EDAV-Project/" target="_blank"
-                                    rel="noopener noreferrer" class="modal-popup__link">
-                                    View Project →
-                                </a>
-                                <ul class="modal-popup__cat">
-                                    <li>Data Visualization</li>
-                                    <li>R Programming</li>
-                                    <li>D3.js</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-02" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/foodmo_imp.png" alt="FoodMO application screenshot">
-
-                            <div class="modal-popup__desc">
-                                <h5>FoodMO: A Food Nutrient Analysis Application</h5>
-                                <p>Built a mobile application that uses Optical Character Recognition (OCR) to extract
-                                    text from food labels and a Random Forest classifier to analyze nutritional content.
-                                    The system provides personalized healthier-alternative recommendations using cosine
-                                    similarity, helping users make informed dietary choices. Published as a research
-                                    paper in Springer LNNS.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>OCR</li>
-                                    <li>Random Forest</li>
-                                    <li>Cosine Similarity</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-03" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/phy.png" alt="Physics IRL AR application screenshot">
-
-                            <div class="modal-popup__desc">
-                                <h5>Physics IRL</h5>
-                                <p>An augmented reality (AR) application that makes physics tangible. Using Unity's AR
-                                    Plane Manager, it detects horizontal surfaces where users can place 3D objects to
-                                    study gravitational force. AR Tracked Image Manager tracks predefined images for
-                                    frictional force simulations. Built with custom C# scripts and realistic textures,
-                                    it provides an immersive, interactive learning experience.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Unity</li>
-                                    <li>C#</li>
-                                    <li>Object Detection</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-07" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/todolist.png"
-                                alt="Cloud ToDo List application screenshot">
-
-                            <div class="modal-popup__desc">
-                                <h5>ToDo List: Cloud-Based Multi-Device To-Do List</h5>
-                                <p>A scalable, cloud-based task management application deployed on AWS EC2 with
-                                    auto-scaling and Django. Supports multi-user real-time collaboration with full CRUD
-                                    operations, minimal latency, and high availability. Responsive design ensures
-                                    accessibility across all devices.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Django</li>
-                                    <li>AWS EC2</li>
-                                    <li>Security Groups</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-04" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/rec.png"
-                                alt="MyReckList recommendation system screenshot">
-
-                            <div class="modal-popup__desc">
-                                <h5>MyReckList</h5>
-                                <p>A recommendation engine that suggests movies and books tailored to user preferences
-                                    using the Alternating Least Squares (ALS) algorithm. Implements collaborative
-                                    filtering to analyze rating patterns and deliver the top 10 most relevant
-                                    recommendations, ensuring a highly personalized discovery experience.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Collaborative Filtering</li>
-                                    <li>ALS Algorithm</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-05" hidden>
-                        <div class="modal-popup">
-
-                            <img src="images/portfolio/gallery/umanita_page.png" alt="Umanità platform screenshot">
-
-                            <div class="modal-popup__desc">
-                                <h5>Umanità</h5>
-                                <p>A platform designed for NGOs to create and manage customizable websites that showcase
-                                    their missions. Built with HTML, CSS, and JavaScript, it features donation
-                                    integrations, event listings, and volunteer sign-up forms — enabling organizations
-                                    to enhance their online presence and community engagement.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Web Development</li>
-                                    <li>HTML/CSS/JS</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-06" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/ecg.png" alt="ECG Report Analysis tool screenshot">
-
-                            <div class="modal-popup__desc">
-                                <h5>ECG Report Analysis Leveraging Generative AI</h5>
-                                <p>A healthcare tool that uses Convolutional Neural Networks to classify ECG reports
-                                    with 92% accuracy across multiple heart conditions. Integrates Generative AI to
-                                    deliver simplified, profile-aware analyses — suggesting lifestyle changes and
-                                    locating nearby cardiologists. Ongoing development focuses on predictive insights
-                                    for future cardiac health.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>CNN</li>
-                                    <li>Generative AI</li>
-                                    <li>Healthcare</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-08" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/bridgerton.png" alt="Bridgerton Watch Party screenshot">
-
-                            <div class="modal-popup__desc">
-                                <h5>Bridgerton Watch Party</h5>
-                                <p>An interactive, highly-stylized web application for a Bridgerton watch party.
-                                    Features include a Regency-era language translator powered by Gen AI, gossip polls,
-                                    a tea spill board, character quizzes, and live chat functionality deployed on
-                                    Netlify.</p>
-                                <a href="https://bridgertonparty.netlify.app/" target="_blank" rel="noopener noreferrer"
-                                    class="modal-popup__link">
-                                    View Project →
-                                </a>
-                                <ul class="modal-popup__cat">
-                                    <li>Web Development</li>
-                                    <li>Gen AI</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> <!-- end modal -->
-
-                </div> <!-- end works-portfolio -->
-
-            </section> <!-- end s-works -->
-
-            <!-- Publications -->
-            <section class="s-works target-section">
-
-
-                <div class="row works-portfolio">
-
-                    <div class="column lg-12" data-animate-block>
-
-                        <h2 class="text-pretitle2" data-animate-el>
-                            Publications
-                        </h2>
-                        <p class="h1" data-animate-el>
-                            Peer-reviewed research published in IEEE and Springer venues.
-                        </p>
-
-
-                        <div class="publication-list">
-                            <!-- Publication 1 -->
-                            <div class="publication-item pub-card" data-animate-el>
-                                <div class="pub-card__venue">IEEE Xplore</div>
-                                <h5 class="pub-card__title">Emerging Applications and Challenges in Quantum Computing: A
-                                    Literature Survey</h5>
-                                <p class="pub-card__type">Literature Survey</p>
-                                <p class="pub-card__desc">An extensive survey of current quantum computing applications,
-                                    highlighting emerging opportunities and key challenges for future growth.</p>
-                                <a href="https://ieeexplore.ieee.org/abstract/document/10645271" target="_blank"
-                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
-                            </div>
-
-                            <!-- Publication 2 -->
-                            <div class="publication-item pub-card" data-animate-el>
-                                <div class="pub-card__venue">IEEE Xplore</div>
-                                <h5 class="pub-card__title">Topic Modeling for Identifying Emerging Trends on Instagram
-                                    Using LDA and NMF</h5>
-                                <p class="pub-card__type">Research Paper</p>
-                                <p class="pub-card__desc">Investigates trend identification on Instagram by leveraging
-                                    Latent Dirichlet Allocation (LDA) and Non-Negative Matrix Factorization (NMF),
-                                    offering insights into evolving online trends.</p>
-                                <a href="https://ieeexplore.ieee.org/document/10717021" target="_blank"
-                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
-                            </div>
-
-                            <!-- Publication 3 -->
-                            <div class="publication-item pub-card" data-animate-el>
-                                <div class="pub-card__venue">IEEE Xplore</div>
-                                <h5 class="pub-card__title">Blockchain-Based Smart Contracts for Decentralized
-                                    Vehicle-to-Grid (V2G) Load Management</h5>
-                                <p class="pub-card__type">Smart Contract Implementation & Research</p>
-                                <p class="pub-card__desc">Presents a decentralized V2G system using Solidity smart
-                                    contracts on Ethereum to dynamically manage grid demand while ensuring secure energy
-                                    transactions between EVs and the power grid.</p>
-                                <a href="https://ieeexplore.ieee.org/document/10866137" target="_blank"
-                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
-                            </div>
-
-                            <!-- Publication 4 -->
-                            <div class="publication-item pub-card" data-animate-el>
-                                <div class="pub-card__venue">Springer LNNS</div>
-                                <h5 class="pub-card__title">FoodMO: A Food Nutrient Analysis Application Using OCR and
-                                    Machine Learning</h5>
-                                <p class="pub-card__type">Technical Paper</p>
-                                <p class="pub-card__desc">Details the development of FoodMO — a mobile application that
-                                    uses OCR and machine learning to analyze food nutrients and provide healthier
-                                    dietary recommendations.</p>
-                                <a href="https://link.springer.com/chapter/10.1007/978-981-97-8526-1_47" target="_blank"
-                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
-                            </div>
-
-                            <!-- Publication 5 -->
-                            <div class="publication-item pub-card" data-animate-el>
-                                <div class="pub-card__venue">IEEE Xplore</div>
-                                <h5 class="pub-card__title">Natural Language Processing: A Survey of Approaches,
-                                    Applications, and Future Directions</h5>
-                                <p class="pub-card__type">Literature Review</p>
-                                <p class="pub-card__desc">A comprehensive survey of NLP techniques covering the latest
-                                    approaches, real-world applications, and promising future directions for research.
-                                </p>
-                                <a href="https://ieeexplore.ieee.org/abstract/document/10941573" target="_blank"
-                                    rel="noopener noreferrer" class="pub-card__link">View Paper →</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section> <!-- end publications -->
-
-
-            <!-- ### contact
-            ================================================== -->
-            <section id="contact" class="s-contact target-section">
-
-                <div class="row contact-top">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle2">
-                            Get In Touch
-                        </h2>
-
-                        <p class="h1">
-                            Whether you're exploring a collaboration, looking for a data-driven problem-solver, or just
-                            want to connect about ML, NLP, or data science — I'd love to hear from you.
-                        </p>
-                    </div>
-                </div> <!-- end contact-top -->
-
-                <div class="row contact-bottom">
-                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle2">Reach me at</h3>
-                        <p class="contact-links">
-                            <a href="mailto:ishmeengarewal@gmail.com" class="mailtoui">ishmeengarewal@gmail.com</a>
-                        </p>
-                    </div>
-                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle2">Social</h3>
-                        <ul class="contact-social">
-                            <li><a href="https://www.linkedin.com/in/ishmeen-garewal/" target="_blank"
-                                    rel="noopener noreferrer">LinkedIn</a></li>
-                            <li><a href="https://github.com/ishmeen-11" target="_blank"
-                                    rel="noopener noreferrer">Github</a></li>
-                            <li><a href="https://scholar.google.ca/citations?user=CW0MP1gAAAAJ&hl=en" target="_blank"
-                                    rel="noopener noreferrer">Google Scholar</a></li>
-                            <li><a href="https://medium.com/@ishmeengarewal" target="_blank"
-                                    rel="noopener noreferrer">Medium</a></li>
-                        </ul>
-                    </div>
-                    <div class="column lg-4 md-12 contact-block">
-                        <a href="mailto:ishmeengarewal@gmail.com"
-                            class="mailtoui btn btn--medium u-fullwidth contact-btn">Drop me a mail.</a>
-                    </div>
-                </div> <!-- end contact-bottom -->
-
-            </section> <!-- end contact -->
-
-        </main> <!-- end s-content -->
-
-
-        <!-- ## footer
-        ================================================== -->
-        <footer class="s-footer">
-
-            <div class="row">
-                <div class="column ss-copyright">
-                    <span>Ishmeen 2026</span>
-                </div>
-
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd"
-                            clip-rule="evenodd">
-                            <path
-                                d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
-                        </svg>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <img class="hero-mandala" src="images/mandala.svg" alt="" aria-hidden="true">
+        <img class="hero-mandala two" src="images/mandala-blue.svg" alt="" aria-hidden="true">
+
+        <div class="wrap hero-inner">
+            <span class="hero-eyebrow"><i class="dot"></i><span class="eb-full">Data Science Intern @ Artie · MS
+                    Data Science @ Columbia</span><span class="eb-short">DS Intern @ Artie · MS @ Columbia</span></span>
+
+            <h1>Hi, I'm Ishmeen — I turn messy, real-world problems into
+                <span class="accent">intelligent, data-driven systems.</span>
+            </h1>
+
+            <p class="hero-sub">
+                Data Science graduate student at <strong>Columbia University</strong> working across machine
+                learning, causal inference, forecasting, and AI — building things that are technical enough for
+                research and practical enough to ship.
+            </p>
+
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">View my work</a>
+                <a class="btn btn-ghost" href="#contact">Get in touch</a>
+
+                <div class="hero-social">
+                    <a class="icon-link" href="https://www.linkedin.com/in/ishmeen-garewal/" target="_blank"
+                        rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.2 8h4.6v14H.2V8zm7.5 0h4.4v1.9h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 7V22h-4.6v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.49V22H7.7V8z"/></svg>
+                    </a>
+                    <a class="icon-link" href="https://github.com/ishmeen-11" target="_blank" rel="noopener"
+                        aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                    </a>
+                    <a class="icon-link" href="https://scholar.google.ca/citations?user=CW0MP1gAAAAJ&hl=en"
+                        target="_blank" rel="noopener" aria-label="Google Scholar">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3c0 1.6 3.1 3.5 7 3.5s7-1.9 7-3.5v-3.3l-7 3.8-7-3.8z"/></svg>
+                    </a>
+                    <a class="icon-link" href="https://medium.com/@ishmeengarewal" target="_blank" rel="noopener"
+                        aria-label="Medium">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.8 7.4c0-.2 0-.4-.2-.6L1.2 5v-.3h4.5l3.5 7.7 3.1-7.7H16V5l-1.2 1.1c-.1.1-.2.2-.1.4v9c0 .2 0 .3.1.4l1.1 1.1v.3h-5.6v-.3l1.2-1.1c.1-.1.1-.2.1-.4V8.4l-3.4 8.5h-.4L4 8.4v5.7c0 .3 0 .5.2.7l1.6 1.9v.3H1.2v-.3l1.6-1.9c.2-.2.3-.4.2-.7V7.4z"/></svg>
+                    </a>
+                    <a class="icon-link" href="mailto:ishmeengarewal@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6l9 6 9-6"/></svg>
                     </a>
                 </div>
             </div>
+        </div>
 
-        </footer> <!-- end s-footer -->
+        <div class="hero-scroll">Scroll<i></i></div>
+    </section>
 
-    </div> <!-- end -s-pagewrap -->
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+        <div class="wrap about-grid">
+            <div class="about-photo reveal">
+                <img src="images/about-photo.jpg" srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x"
+                    alt="Ishmeen Garewal">
+                <div class="badge">📍 <span>New York City</span> · <b>Columbia</b></div>
+            </div>
 
+            <div class="about-body reveal">
+                <span class="kicker">About me</span>
+                <h2 class="section-title">Researcher, builder &amp; <span class="accent">curious explorer.</span></h2>
+                <p style="margin-top:20px;">
+                    I'm a Master's in Data Science student at <strong>Columbia University</strong> with a background
+                    in Computer Engineering (CGPA 9.66/10) and <strong>5 peer-reviewed publications</strong> in IEEE
+                    and Springer. I work at the intersection of machine learning, <strong>causal inference</strong>,
+                    <strong>forecasting</strong>, and data-driven product decisions — taking complex problems and
+                    turning them into practical, scalable solutions.
+                </p>
+                <p>
+                    I'm currently a <strong>Data Science Intern at Artie</strong>, and have previously interned at
+                    <strong>Deloitte</strong> and <strong>IIT Roorkee</strong> — alongside my role as a Graduate
+                    Student Assistant at the <strong>Northeast Big Data Innovation Hub</strong> at Columbia. Beyond
+                    the data, you'll find me wandering through Central Park or Riverside Park, hunting for new coffee
+                    shops and bookstores, and buying the most random things from Five Below. 🌸
+                </p>
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="num">3.87</div>
+                        <div class="lbl">Columbia GPA (out of 4)</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">5</div>
+                        <div class="lbl">Peer-reviewed publications</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">4+</div>
+                        <div class="lbl">Internships &amp; research roles</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">9.66</div>
+                        <div class="lbl">B.E. CGPA (out of 10)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- ECharts -->
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const chartDom = document.getElementById('skillsGraph');
-            if (chartDom && typeof echarts !== 'undefined') {
-                const myChart = echarts.init(chartDom);
+    <!-- ============ EXPERIENCE / EDUCATION ============ -->
+    <section id="experience">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="kicker">The journey</span>
+                <h2 class="section-title">Experience &amp; <span class="accent">education.</span></h2>
+            </div>
 
-                const categories = [
-                    { name: 'Core', itemStyle: { color: '#06b6d4' } },
-                    { name: 'Languages', itemStyle: { color: '#a855f7' } },
-                    { name: 'ML & AI', itemStyle: { color: '#ec4899' } },
-                    { name: 'Data & Viz', itemStyle: { color: '#3b82f6' } },
-                    { name: 'Tools', itemStyle: { color: '#10b981' } }
-                ];
+            <div class="two-col">
+                <div class="reveal">
+                    <div class="col-head">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                        Experience
+                    </div>
+                    <div class="timeline">
+                        <div class="tl-item">
+                            <div class="when">Jun 2026 — Present</div>
+                            <h4>Artie</h4>
+                            <div class="role">Data Science Intern</div>
+                            <ul>
+                                <li>Building and evaluating data-science and machine-learning workflows that turn product and user data into actionable insights.</li>
+                                <li>Partnering with the team to ship data-driven features and decisions.</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <div class="when">Jan 2026 — Present</div>
+                            <h4>Northeast Big Data Innovation Hub</h4>
+                            <div class="role">Graduate Student Assistant · Columbia University</div>
+                            <ul>
+                                <li>Building a healthcare digital-twin prototype integrating multi-source physiological data for patient-level treatment simulation.</li>
+                                <li>Engineering structured and time-series feature pipelines to support predictive modeling experiments.</li>
+                                <li>Delivered an Advanced Excel workshop to 25+ MS students; developing an Advanced SQL workshop.</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <div class="when">May 2025 — Aug 2025</div>
+                            <h4>Indian Institute of Technology, Roorkee</h4>
+                            <div class="role">Project Intern</div>
+                            <ul>
+                                <li>Analyzed 5,000+ vehicular trajectories with spatiotemporal modeling, validating data quality to &lt;2% error.</li>
+                                <li>Engineered behavioral metrics across 10+ maneuver types, improving classification accuracy by 18%.</li>
+                                <li>Built ML decision systems with fine-tuned BERT and RAG pipelines — a 22% accuracy lift over rule-based baselines.</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <div class="when">Jun 2024 — Jul 2024</div>
+                            <h4>Deloitte — Financial Advisory</h4>
+                            <div class="role">Intern</div>
+                            <ul>
+                                <li>Automated an FX deal valuation pipeline (QuantLib + REST APIs), cutting manual processing time by 75%.</li>
+                                <li>Built a Django dashboard with CI/CD adopted by 40+ consultants across the practice.</li>
+                                <li>Presented an automation framework and policy recommendations to 3 Partners and 15+ senior leaders.</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <div class="when">Jul 2024 — Jan 2025</div>
+                            <h4>FCRIT, University of Mumbai</h4>
+                            <div class="role">Research Intern</div>
+                            <p>Published research at the intersection of NLP, Quantum Computing, and Blockchain in IEEE Xplore and Springer.</p>
+                        </div>
+                    </div>
+                </div>
 
-                const data = [
-                    { id: '1', name: 'Ishmeen', symbolSize: 70, category: 0, label: { show: true, fontSize: 18, fontWeight: 'bold' } },
+                <div class="reveal">
+                    <div class="col-head">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M5 11v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"/></svg>
+                        Education
+                    </div>
+                    <div class="timeline">
+                        <div class="tl-item">
+                            <div class="when">Expected Dec 2026</div>
+                            <h4>Columbia University</h4>
+                            <div class="role">M.S. in Data Science · GPA 3.87/4</div>
+                            <ul>
+                                <li>Coursework: Machine Learning, Statistical &amp; Causal Inference, Forecasting, Applied Deep Learning, Data Visualization.</li>
+                                <li>Collaborating with Columbia Business School MBAs through Analytics in Action on real industry challenges.</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <div class="when">Graduated Jun 2025</div>
+                            <h4>Fr. Conceicao Rodrigues Institute of Technology</h4>
+                            <div class="role">B.E. in Computer Engineering · CGPA 9.66/10</div>
+                            <ul>
+                                <li>Graduated in the top 10% of the class.</li>
+                                <li>Core work in Data Structures, OS, Machine Learning, Big Data, AI, Blockchain &amp; Cryptography.</li>
+                                <li>Published 5 research papers during undergraduate studies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    { id: '2', name: 'Languages', symbolSize: 45, category: 1 },
-                    { id: '21', name: 'Python', symbolSize: 35, value: 95, category: 1 },
-                    { id: '22', name: 'SQL', symbolSize: 30, value: 90, category: 1 },
-                    { id: '23', name: 'R', symbolSize: 20, value: 80, category: 1 },
-                    { id: '24', name: 'JavaScript', symbolSize: 20, value: 70, category: 1 },
-                    { id: '25', name: 'C++', symbolSize: 20, value: 75, category: 1 },
-                    { id: '26', name: 'Java', symbolSize: 20, value: 75, category: 1 },
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="kicker">Toolkit</span>
+                <h2 class="section-title">Skills &amp; <span class="accent">technologies.</span></h2>
+                <p class="section-intro">A blend of statistical depth, engineering, and the tools I reach for to take
+                    ideas from notebook to production.</p>
+            </div>
 
-                    { id: '3', name: 'ML & AI', symbolSize: 45, category: 2 },
-                    { id: '31', name: 'PyTorch', symbolSize: 35, value: 90, category: 2 },
-                    { id: '32', name: 'TensorFlow', symbolSize: 30, value: 85, category: 2 },
-                    { id: '33', name: 'Scikit-learn', symbolSize: 30, value: 85, category: 2 },
-                    { id: '34', name: 'NLP', symbolSize: 35, value: 88, category: 2 },
-                    { id: '35', name: 'Gen AI', symbolSize: 35, value: 90, category: 2 },
-                    { id: '36', name: 'Transformers', symbolSize: 30, value: 85, category: 2 },
-                    { id: '37', name: 'CNNs/GNNs', symbolSize: 25, value: 80, category: 2 },
+            <div class="focus-row reveal">
+                <span class="focus-chip">Machine Learning</span>
+                <span class="focus-chip">Causal Inference</span>
+                <span class="focus-chip">Forecasting</span>
+                <span class="focus-chip">NLP</span>
+                <span class="focus-chip">Deep Learning</span>
+                <span class="focus-chip">Analytics</span>
+                <span class="focus-chip">Data-driven Products</span>
+            </div>
 
-                    { id: '4', name: 'Data & Viz', symbolSize: 45, category: 3 },
-                    { id: '41', name: 'Pandas', symbolSize: 35, value: 95, category: 3 },
-                    { id: '42', name: 'NumPy', symbolSize: 30, value: 90, category: 3 },
-                    { id: '43', name: 'Tableau', symbolSize: 25, value: 85, category: 3 },
-                    { id: '44', name: 'BigQuery', symbolSize: 25, value: 80, category: 3 },
+            <div class="skill-grid">
+                <div class="skill-card reveal">
+                    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14"/></svg></div>
+                    <h3>Languages</h3>
+                    <div class="chips">
+                        <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">R</span>
+                        <span class="chip">JavaScript</span><span class="chip">C++</span><span class="chip">Java</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></div>
+                    <h3>ML &amp; AI</h3>
+                    <div class="chips">
+                        <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">scikit-learn</span>
+                        <span class="chip">NLP</span><span class="chip">Generative AI</span><span class="chip">Transformers</span>
+                        <span class="chip">CNNs / GNNs</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg></div>
+                    <h3>Data &amp; Visualization</h3>
+                    <div class="chips">
+                        <span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Tableau</span>
+                        <span class="chip">BigQuery</span><span class="chip">D3.js</span><span class="chip">ggplot2</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2 2.5-2.5z"/></svg></div>
+                    <h3>Tools &amp; Platforms</h3>
+                    <div class="chips">
+                        <span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Git</span>
+                        <span class="chip">FastAPI / Django</span><span class="chip">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    { id: '5', name: 'Tools & Platforms', symbolSize: 45, category: 4 },
-                    { id: '51', name: 'AWS', symbolSize: 30, value: 80, category: 4 },
-                    { id: '52', name: 'Docker', symbolSize: 25, value: 75, category: 4 },
-                    { id: '53', name: 'Git', symbolSize: 30, value: 85, category: 4 },
-                    { id: '54', name: 'FastAPI/Django', symbolSize: 25, value: 80, category: 4 },
-                    { id: '55', name: 'CI/CD', symbolSize: 25, value: 75, category: 4 }
-                ];
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="kicker">Selected work</span>
+                <h2 class="section-title">Projects I've <span class="accent">built.</span></h2>
+                <p class="section-intro">From exploratory analysis and recommender systems to healthcare AI and
+                    cloud-deployed apps.</p>
+            </div>
 
-                const links = [
-                    { source: '1', target: '2' },
-                    { source: '1', target: '3' },
-                    { source: '1', target: '4' },
-                    { source: '1', target: '5' },
+            <div class="card-grid">
+                <!-- Heat -->
+                <article class="project-card reveal">
+                    <div class="project-media">
+                        <span class="project-cat">Data Visualization</span>
+                        <img src="images/portfolio/gallery/heat_ss.png" alt="Heat's Toll on Health" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3>Heat's Toll on Health</h3>
+                        <p>An EDAV project on extreme heat's impact on U.S. public health — data wrangling and visual
+                            analytics (R, D3.js, ggplot2) surfacing heat-related hospitalizations and mortality across
+                            regions and demographics.</p>
+                        <div class="tags"><span class="tag">R</span><span class="tag">D3.js</span><span class="tag">ggplot2</span></div>
+                        <a class="project-link" href="https://ishmeen-11.github.io/EDAV-Project/" target="_blank" rel="noopener">View project
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </div>
+                </article>
 
-                    { source: '2', target: '21' },
-                    { source: '2', target: '22' },
-                    { source: '2', target: '23' },
-                    { source: '2', target: '24' },
-                    { source: '2', target: '25' },
-                    { source: '2', target: '26' },
+                <!-- FoodMO -->
+                <article class="project-card reveal">
+                    <div class="project-media">
+                        <span class="project-cat">Mobile · ML</span>
+                        <img src="images/portfolio/gallery/foodmo_imp.png" alt="FoodMO" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3>FoodMO — Food Nutrient Analysis</h3>
+                        <p>A mobile app that reads food labels with OCR and classifies nutrition with a Random Forest,
+                            then recommends healthier alternatives via cosine similarity. Published in Springer LNNS.</p>
+                        <div class="tags"><span class="tag">Python</span><span class="tag">OCR</span><span class="tag">Random Forest</span></div>
+                        <a class="project-link" href="https://link.springer.com/chapter/10.1007/978-981-97-8526-1_47" target="_blank" rel="noopener">Read paper
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </div>
+                </article>
 
-                    { source: '3', target: '31' },
-                    { source: '3', target: '32' },
-                    { source: '3', target: '33' },
-                    { source: '3', target: '34' },
-                    { source: '3', target: '35' },
-                    { source: '3', target: '36' },
-                    { source: '3', target: '37' },
+                <!-- ECG -->
+                <article class="project-card reveal">
+                    <div class="project-media">
+                        <span class="project-cat">Healthcare AI</span>
+                        <img src="images/portfolio/gallery/ecg.png" alt="ECG Report Analysis" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3>ECG Report Analysis with Gen AI</h3>
+                        <p>A healthcare tool that classifies ECG reports with a CNN (92% accuracy) and layers
+                            Generative AI to deliver simplified, profile-aware analysis and lifestyle guidance.</p>
+                        <div class="tags"><span class="tag">CNN</span><span class="tag">Gen AI</span><span class="tag">Python</span></div>
+                    </div>
+                </article>
 
-                    { source: '4', target: '41' },
-                    { source: '4', target: '42' },
-                    { source: '4', target: '43' },
-                    { source: '4', target: '44' },
+                <!-- MyReckList -->
+                <article class="project-card reveal">
+                    <div class="project-media">
+                        <span class="project-cat">Recommender System</span>
+                        <img src="images/portfolio/gallery/rec.png" alt="MyReckList" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3>MyReckList — Recommendations</h3>
+                        <p>A recommendation engine for movies and books using Alternating Least Squares (ALS) and
+                            collaborative filtering to deliver the top-10 most relevant, personalized picks.</p>
+                        <div class="tags"><span class="tag">Python</span><span class="tag">ALS</span><span class="tag">Collaborative Filtering</span></div>
+                    </div>
+                </article>
 
-                    { source: '5', target: '51' },
-                    { source: '5', target: '52' },
-                    { source: '5', target: '53' },
-                    { source: '5', target: '54' },
-                    { source: '5', target: '55' }
-                ];
+                <!-- Bridgerton -->
+                <article class="project-card reveal">
+                    <div class="project-media">
+                        <span class="project-cat">Web App</span>
+                        <img src="images/portfolio/gallery/bridgerton.png" alt="Bridgerton Watch Party" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3>Bridgerton Watch Party</h3>
+                        <p>A playful, highly-stylized watch-party app — a Regency-era translator powered by Gen AI,
+                            gossip polls, character quizzes, and live chat, deployed on Netlify.</p>
+                        <div class="tags"><span class="tag">React</span><span class="tag">Gen AI</span><span class="tag">Netlify</span></div>
+                        <a class="project-link" href="https://bridgertonparty.netlify.app/" target="_blank" rel="noopener">Visit site
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </div>
+                </article>
 
-                const option = {
-                    backgroundColor: 'transparent',
-                    tooltip: {
-                        trigger: 'item',
-                        formatter: function (params) {
-                            if (params.data.value) {
-                                return `${params.data.name}: ${params.data.value}% Proficiency`;
-                            }
-                            return params.data.name;
-                        }
-                    },
-                    animationDurationUpdate: 1500,
-                    animationEasingUpdate: 'quinticInOut',
-                    series: [{
-                        type: 'graph',
-                        layout: 'force',
-                        data: data,
-                        links: links,
-                        categories: categories,
-                        roam: true,
-                        label: {
-                            show: true,
-                            position: 'right',
-                            formatter: '{b}',
-                            color: '#fff',
-                            fontFamily: 'Fira Code'
-                        },
-                        force: {
-                            repulsion: 400,
-                            edgeLength: [50, 150],
-                            gravity: 0.1
-                        },
-                        itemStyle: {
-                            shadowBlur: 15,
-                            shadowColor: 'rgba(6, 182, 212, 0.4)'
-                        },
-                        lineStyle: {
-                            color: 'source',
-                            curveness: 0.2,
-                            opacity: 0.7,
-                            width: 2
-                        },
-                        emphasis: {
-                            focus: 'adjacency',
-                            lineStyle: {
-                                width: 4
-                            }
-                        }
-                    }]
-                };
+                <!-- Physics IRL -->
+                <article class="project-card reveal">
+                    <div class="project-media">
+                        <span class="project-cat">Augmented Reality</span>
+                        <img src="images/portfolio/gallery/phy.png" alt="Physics IRL" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3>Physics IRL</h3>
+                        <p>An augmented-reality app that makes physics tangible — place 3D objects on detected
+                            surfaces to study gravity and friction, built in Unity with custom C# scripts.</p>
+                        <div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">AR</span></div>
+                    </div>
+                </article>
 
-                myChart.setOption(option);
+                <!-- ToDo -->
+                <article class="project-card reveal">
+                    <div class="project-media">
+                        <span class="project-cat">Cloud Computing</span>
+                        <img src="images/portfolio/gallery/todolist.png" alt="Cloud ToDo List" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3>Cloud-Based To-Do List</h3>
+                        <p>A scalable task manager on AWS EC2 with auto-scaling and Django — multi-user real-time
+                            collaboration, full CRUD operations, and high availability across devices.</p>
+                        <div class="tags"><span class="tag">Django</span><span class="tag">AWS EC2</span><span class="tag">Python</span></div>
+                        <a class="project-link" href="https://github.com/ishmeen-11/TODO" target="_blank" rel="noopener">View code
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                    </div>
+                </article>
 
-                window.addEventListener('resize', function () {
-                    myChart.resize();
-                });
-            }
-        });
-    </script>
+                <!-- Umanita -->
+                <article class="project-card reveal">
+                    <div class="project-media">
+                        <span class="project-cat">Web Platform</span>
+                        <img src="images/portfolio/gallery/umanita_page.png" alt="Umanità" loading="lazy">
+                    </div>
+                    <div class="project-body">
+                        <h3>Umanità</h3>
+                        <p>A platform for NGOs to build customizable websites — donation integrations, event listings,
+                            and volunteer sign-ups to grow their online presence and community.</p>
+                        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-    <!-- Particles JS -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            if (document.getElementById('particles-js')) {
-                particlesJS('particles-js', {
-                    "particles": {
-                        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-                        "color": { "value": "#06b6d4" },
-                        "shape": { "type": "circle" },
-                        "opacity": { "value": 0.5, "random": false },
-                        "size": { "value": 3, "random": true },
-                        "line_linked": { "enable": true, "distance": 150, "color": "#06b6d4", "opacity": 0.4, "width": 1.5 },
-                        "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
-                    },
-                    "interactivity": {
-                        "detect_on": "canvas",
-                        "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true },
-                        "modes": { "grab": { "distance": 180, "line_linked": { "opacity": 1 } }, "repulse": { "distance": 200, "duration": 0.4 } }
-                    },
-                    "retina_detect": true
-                });
-            }
-        });
-    </script>
+    <!-- ============ RESEARCH / PUBLICATIONS ============ -->
+    <section id="research">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="kicker">Publications</span>
+                <h2 class="section-title">Peer-reviewed <span class="accent">research.</span></h2>
+                <p class="section-intro">Five papers published in IEEE Xplore and Springer venues.</p>
+            </div>
 
+            <div class="card-grid">
+                <article class="pub-card reveal">
+                    <span class="pub-venue">IEEE Xplore</span>
+                    <h3>Emerging Applications and Challenges in Quantum Computing: A Literature Survey</h3>
+                    <p class="type">Literature Survey</p>
+                    <p class="desc">A survey of current quantum-computing applications, highlighting emerging
+                        opportunities and key challenges for future growth.</p>
+                    <a class="more" href="https://ieeexplore.ieee.org/abstract/document/10645271" target="_blank" rel="noopener">View paper →</a>
+                </article>
+
+                <article class="pub-card reveal">
+                    <span class="pub-venue">IEEE Xplore</span>
+                    <h3>Topic Modeling for Identifying Emerging Trends on Instagram Using LDA and NMF</h3>
+                    <p class="type">Research Paper</p>
+                    <p class="desc">Trend identification on Instagram using Latent Dirichlet Allocation and Non-Negative
+                        Matrix Factorization to surface evolving online themes.</p>
+                    <a class="more" href="https://ieeexplore.ieee.org/document/10717021" target="_blank" rel="noopener">View paper →</a>
+                </article>
+
+                <article class="pub-card reveal">
+                    <span class="pub-venue">IEEE Xplore</span>
+                    <h3>Blockchain-Based Smart Contracts for Decentralized Vehicle-to-Grid (V2G) Load Management</h3>
+                    <p class="type">Smart Contract Implementation &amp; Research</p>
+                    <p class="desc">A decentralized V2G system using Solidity smart contracts on Ethereum to manage grid
+                        demand and secure energy transactions between EVs and the grid.</p>
+                    <a class="more" href="https://ieeexplore.ieee.org/document/10866137" target="_blank" rel="noopener">View paper →</a>
+                </article>
+
+                <article class="pub-card reveal">
+                    <span class="pub-venue">Springer LNNS</span>
+                    <h3>FoodMO: A Food Nutrient Analysis Application Using OCR and Machine Learning</h3>
+                    <p class="type">Technical Paper</p>
+                    <p class="desc">The development of FoodMO — a mobile app that uses OCR and ML to analyze food
+                        nutrients and provide healthier dietary recommendations.</p>
+                    <a class="more" href="https://link.springer.com/chapter/10.1007/978-981-97-8526-1_47" target="_blank" rel="noopener">View paper →</a>
+                </article>
+
+                <article class="pub-card reveal">
+                    <span class="pub-venue">IEEE Xplore</span>
+                    <h3>Natural Language Processing: A Survey of Approaches, Applications, and Future Directions</h3>
+                    <p class="type">Literature Review</p>
+                    <p class="desc">A comprehensive survey of NLP techniques covering the latest approaches, real-world
+                        applications, and promising future research directions.</p>
+                    <a class="more" href="https://ieeexplore.ieee.org/abstract/document/10941573" target="_blank" rel="noopener">View paper →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ OPEN SOURCE (GitHub) ============ -->
+    <section id="opensource">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="kicker">Open source</span>
+                <h2 class="section-title">Latest from <span class="accent">GitHub.</span></h2>
+                <p class="section-intro">A selection of what I've been building — from healthcare digital twins to
+                    deep-learning and forecasting models.</p>
+            </div>
+
+            <div class="card-grid">
+                <a class="repo-card reveal" href="https://github.com/ishmeen-11/Patient-Digital-Twin" target="_blank" rel="noopener">
+                    <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    <div class="repo-top">
+                        <div class="repo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5V4.5z"/><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20"/></svg></div>
+                        <div><div class="repo-kicker">Open-source repo</div><h3>Patient Digital Twin</h3></div>
+                    </div>
+                    <p>A healthcare digital-twin prototype that fuses multi-source physiological data to simulate patient-level treatment responses.</p>
+                    <div class="repo-meta"><span class="repo-lang"><i class="lang-dot" style="background:#3572A5"></i>Python</span></div>
+                </a>
+
+                <a class="repo-card reveal" href="https://github.com/ishmeen-11/Online-Retail-Data-Agentic-AI" target="_blank" rel="noopener">
+                    <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    <div class="repo-top">
+                        <div class="repo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5V4.5z"/><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20"/></svg></div>
+                        <div><div class="repo-kicker">Open-source repo</div><h3>Online Retail · Agentic AI</h3></div>
+                    </div>
+                    <p>An agentic-AI workflow over an online-retail dataset — LLM-driven agents that query, analyze, and surface business insights from transactional data.</p>
+                    <div class="repo-meta"><span class="repo-lang"><i class="lang-dot" style="background:#3572A5"></i>Python</span></div>
+                </a>
+
+                <a class="repo-card reveal" href="https://github.com/ishmeen-11/Deep-Learning-for-Real-Estate-Price-Prediction" target="_blank" rel="noopener">
+                    <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    <div class="repo-top">
+                        <div class="repo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5V4.5z"/><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20"/></svg></div>
+                        <div><div class="repo-kicker">Open-source repo</div><h3>Real-Estate Price Prediction</h3></div>
+                    </div>
+                    <p>A deep-learning regression model that predicts real-estate prices from property and location features, with feature engineering and evaluation.</p>
+                    <div class="repo-meta"><span class="repo-lang"><i class="lang-dot" style="background:#DA5B0B"></i>Jupyter Notebook</span></div>
+                </a>
+
+                <a class="repo-card reveal" href="https://github.com/ishmeen-11/English-French-Translator-Long-Short-Term-Memory-Networks" target="_blank" rel="noopener">
+                    <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    <div class="repo-top">
+                        <div class="repo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5V4.5z"/><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20"/></svg></div>
+                        <div><div class="repo-kicker">Open-source repo</div><h3>English → French Translator (LSTM)</h3></div>
+                    </div>
+                    <p>A sequence-to-sequence English-to-French translator built with LSTM encoder–decoder networks for neural machine translation.</p>
+                    <div class="repo-meta"><span class="repo-lang"><i class="lang-dot" style="background:#DA5B0B"></i>Jupyter Notebook</span></div>
+                </a>
+
+                <a class="repo-card reveal" href="https://github.com/ishmeen-11/Heart-Disease-Prediction-K-Nearest-Neighbors-Classifier" target="_blank" rel="noopener">
+                    <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    <div class="repo-top">
+                        <div class="repo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5V4.5z"/><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20"/></svg></div>
+                        <div><div class="repo-kicker">Open-source repo</div><h3>Heart Disease Prediction (KNN)</h3></div>
+                    </div>
+                    <p>A K-Nearest-Neighbors classifier that predicts heart-disease risk from clinical features, with exploratory analysis and model tuning.</p>
+                    <div class="repo-meta"><span class="repo-lang"><i class="lang-dot" style="background:#DA5B0B"></i>Jupyter Notebook</span></div>
+                </a>
+
+                <a class="repo-card reveal" href="https://github.com/ishmeen-11/Avocado-Price-Prediction-Using-SVR" target="_blank" rel="noopener">
+                    <span class="ext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    <div class="repo-top">
+                        <div class="repo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5V4.5z"/><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20"/></svg></div>
+                        <div><div class="repo-kicker">Open-source repo</div><h3>Avocado Price Prediction (SVR)</h3></div>
+                    </div>
+                    <p>A Support Vector Regression model that forecasts avocado prices from historical sales and seasonality trends.</p>
+                    <div class="repo-meta"><span class="repo-lang"><i class="lang-dot" style="background:#DA5B0B"></i>Jupyter Notebook</span></div>
+                </a>
+            </div>
+
+            <div class="center-btn reveal">
+                <a class="btn btn-ghost" href="https://github.com/ishmeen-11" target="_blank" rel="noopener">See all on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WRITING ============ -->
+    <section id="writing">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="kicker">Writing</span>
+                <h2 class="section-title">From my <span class="accent">journal.</span></h2>
+            </div>
+
+            <div class="writing-panel reveal">
+                <img class="hero-mandala" src="images/mandala-blue.svg" alt="" aria-hidden="true"
+                    style="top:-12vw; right:-6vw; width:26vw; opacity:.08;">
+                <div class="writing-copy">
+                    <h3>I write about data science, ML &amp; what I'm learning.</h3>
+                    <p>Notes on machine learning, causal inference, and the projects I'm building — in plain language,
+                        for anyone curious. New pieces land on Medium.</p>
+                    <a class="btn btn-primary" href="https://medium.com/@ishmeengarewal" target="_blank" rel="noopener">Read on Medium</a>
+                </div>
+                <div class="writing-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+        <div class="wrap">
+            <div class="contact-card reveal">
+                <img class="hero-mandala" src="images/mandala.svg" alt="" aria-hidden="true"
+                    style="top:-10vw; right:-8vw; width:30vw;">
+                <span class="kicker" style="justify-content:center;">Get in touch</span>
+                <h2>Let's build something <br>meaningful together. 💜</h2>
+                <p>Whether you're exploring a collaboration, looking for a data-driven problem-solver, or just want to
+                    chat about ML, causal inference, or forecasting — my inbox is open.</p>
+                <div class="contact-actions">
+                    <a class="btn btn-primary" href="mailto:ishmeengarewal@gmail.com">Say hello</a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/ishmeen-garewal/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="wrap">
+            <div>
+                <a class="brand" href="#top">Ishmeen<span>.</span></a>
+                <p>© <span id="year">2026</span> Ishmeen Garewal · Built with care in NYC.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/ishmeen-garewal/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.2 8h4.6v14H.2V8zm7.5 0h4.4v1.9h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 7V22h-4.6v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.49V22H7.7V8z"/></svg>
+                </a>
+                <a href="https://github.com/ishmeen-11" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                </a>
+                <a href="https://scholar.google.ca/citations?user=CW0MP1gAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.3c0 1.6 3.1 3.5 7 3.5s7-1.9 7-3.5v-3.3l-7 3.8-7-3.8z"/></svg>
+                </a>
+                <a href="https://medium.com/@ishmeengarewal" target="_blank" rel="noopener" aria-label="Medium">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.8 7.4c0-.2 0-.4-.2-.6L1.2 5v-.3h4.5l3.5 7.7 3.1-7.7H16V5l-1.2 1.1c-.1.1-.2.2-.1.4v9c0 .2 0 .3.1.4l1.1 1.1v.3h-5.6v-.3l1.2-1.1c.1-.1.1-.2.1-.4V8.4l-3.4 8.5h-.4L4 8.4v5.7c0 .3 0 .5.2.7l1.6 1.9v.3H1.2v-.3l1.6-1.9c.2-.2.3-.4.2-.7V7.4z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>

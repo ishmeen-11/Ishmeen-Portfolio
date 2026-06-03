@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" stroke="#6CACE4" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round">
+  <defs>
+    <path id="op" d="M120,14 C141,54 141,88 120,66 C99,88 99,54 120,14 Z"/>
+    <path id="ip" d="M120,72 C133,93 133,112 120,124 C107,112 107,93 120,72 Z"/>
+    <circle id="dot" cx="120" cy="9" r="2" fill="#6CACE4" stroke="none"/>
+  </defs>
+
+  <circle cx="120" cy="120" r="18"/>
+  <circle cx="120" cy="120" r="38"/>
+  <circle cx="120" cy="120" r="60"/>
+  <circle cx="120" cy="120" r="86"/>
+  <circle cx="120" cy="120" r="108"/>
+
+  <use href="#op" transform="rotate(0,120,120)"/>
+  <use href="#op" transform="rotate(30,120,120)"/>
+  <use href="#op" transform="rotate(60,120,120)"/>
+  <use href="#op" transform="rotate(90,120,120)"/>
+  <use href="#op" transform="rotate(120,120,120)"/>
+  <use href="#op" transform="rotate(150,120,120)"/>
+  <use href="#op" transform="rotate(180,120,120)"/>
+  <use href="#op" transform="rotate(210,120,120)"/>
+  <use href="#op" transform="rotate(240,120,120)"/>
+  <use href="#op" transform="rotate(270,120,120)"/>
+  <use href="#op" transform="rotate(300,120,120)"/>
+  <use href="#op" transform="rotate(330,120,120)"/>
+
+  <use href="#ip" transform="rotate(15,120,120)"/>
+  <use href="#ip" transform="rotate(45,120,120)"/>
+  <use href="#ip" transform="rotate(75,120,120)"/>
+  <use href="#ip" transform="rotate(105,120,120)"/>
+  <use href="#ip" transform="rotate(135,120,120)"/>
+  <use href="#ip" transform="rotate(165,120,120)"/>
+  <use href="#ip" transform="rotate(195,120,120)"/>
+  <use href="#ip" transform="rotate(225,120,120)"/>
+  <use href="#ip" transform="rotate(255,120,120)"/>
+  <use href="#ip" transform="rotate(285,120,120)"/>
+  <use href="#ip" transform="rotate(315,120,120)"/>
+  <use href="#ip" transform="rotate(345,120,120)"/>
+
+  <use href="#dot" transform="rotate(0,120,120)"/>
+  <use href="#dot" transform="rotate(30,120,120)"/>
+  <use href="#dot" transform="rotate(60,120,120)"/>
+  <use href="#dot" transform="rotate(90,120,120)"/>
+  <use href="#dot" transform="rotate(120,120,120)"/>
+  <use href="#dot" transform="rotate(150,120,120)"/>
+  <use href="#dot" transform="rotate(180,120,120)"/>
+  <use href="#dot" transform="rotate(210,120,120)"/>
+  <use href="#dot" transform="rotate(240,120,120)"/>
+  <use href="#dot" transform="rotate(270,120,120)"/>
+  <use href="#dot" transform="rotate(300,120,120)"/>
+  <use href="#dot" transform="rotate(330,120,120)"/>
+</svg>
