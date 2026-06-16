@@ -150,12 +150,13 @@
     /* ---- GitHub feed ---- */
     var repoList = $("#github-repo-list");
     if (repoList) {
-        fetch("https://api.github.com/users/ishmeen-11/repos?sort=updated&per_page=6")
+        fetch("https://api.github.com/users/ishmeen-11/repos?sort=updated&per_page=100")
             .then(function (r) { if (!r.ok) throw new Error("gh"); return r.json(); })
             .then(function (data) {
                 var repos = data
-                    .filter(function (r) { return !r.fork; })
-                    .slice(0, 6);
+                    .filter(function (r) { 
+                        return !r.fork && r.name.toLowerCase() !== "ishmeen-11" && r.name.toLowerCase() !== "ishmeen-portfolio"; 
+                    });
                 if (!repos.length) { repoList.innerHTML = '<div class="feed-loading">No public repositories yet.</div>'; return; }
                 repoList.innerHTML = repos.map(function (repo) {
                     var color = langColor[repo.language] || "#9B7EDE";

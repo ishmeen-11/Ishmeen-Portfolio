@@ -1745,26 +1745,27 @@ body.menu-open .nav-toggle span::after {
 /* Button in publication card */
 .pub-actions {
     display: flex;
-    gap: 15px;
+    gap: 16px;
     margin-top: 16px;
     align-items: center;
 }
-.pub-actions a.more {
-    margin-top: 0 !important;
+.pub-actions a.more,
+.pub-actions .btn-modal-trigger {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 13.5px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    height: 24px !important; /* Forces identical bounding boxes */
+    border: none !important;
+    background: transparent !important;
+    color: var(--lav-d) !important;
+    cursor: pointer !important;
+    transition: color 0.2s !important;
 }
-.btn-modal-trigger {
-    background: transparent;
-    border: none;
-    font-family: var(--font-body);
-    font-size: 13.5px;
-    font-weight: 600;
-    color: var(--lav-d);
-    cursor: pointer;
-    padding: 0;
-    transition: color 0.2s;
-    display: inline-flex;
-    align-items: center;
-}
-.btn-modal-trigger:hover {
-    color: var(--blue-d);
+.pub-actions a.more:hover,
+.pub-actions .btn-modal-trigger:hover {
+    color: var(--blue-d) !important;
 }
